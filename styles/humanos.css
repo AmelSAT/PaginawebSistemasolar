@@ -12,6 +12,8 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    width: 100%; 
+    overflow-x: hidden;
 }
 
 .video-container {
@@ -196,3 +198,4 @@ nav {
 .dropdown4:hover .dropdown4-content {
     display: block;
 }
+
