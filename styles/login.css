@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 15vh;
+    padding: 0 5vw;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.dropdown button {
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+.dropdown button .arrow {
+    margin-left: 0.3em;
+    /* Espacio entre el texto y la flecha */
+    font-size: 0.8em;
+    /* Tamaño de la flecha */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid #000000;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #fba4a4;
+    transform: scale(1.1); 
+    transition: transform 0.2s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Barra de búsqueda */
+#search-form {
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+#search-bar {
+    padding: 0.5em;
+    font-size: 1em;
+    color: aliceblue;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/*LOGIN*/
+.login-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-left: 50vw; 
+    background-color: transparent; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+}
+
+.login-button:hover {
+    background-color: #6f7378; 
+}
+/* Sección de navegación */
+nav {
+    background-color: rgb(162, 225, 240);
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+/* Dropdown */
+.dropdown1,
+.dropdown2,
+.dropdown3,
+.dropdown4 {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin-left: 2vw;
+    margin-right: 5vw;
+}
+
+.dropdown1 button,
+.dropdown2 button,
+.dropdown3 button,
+.dropdown4 button {
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;
+    color: #000000;
+    cursor: pointer;
+    border: black;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 1.5vh;
+}
+
+.dropdown1 button .arrow,
+.dropdown2 button .arrow,
+.dropdown3 button .arrow,
+.dropdown4 button .arrow {
+    margin-left: 0.3em;
+    font-size: 0.8em;
+}
+
+.dropdown1-content,
+.dropdown2-content,
+.dropdown3-content,
+.dropdown4-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid #000000;
+}
+
+.dropdown1-content a,
+.dropdown2-content a,
+.dropdown3-content a,
+.dropdown4-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown1-content a:hover,
+.dropdown2-content a:hover,
+.dropdown3-content a:hover,
+.dropdown4-content a:hover {
+    background-color: #becef0;
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.dropdown1:hover .dropdown1-content,
+.dropdown2:hover .dropdown2-content,
+.dropdown3:hover .dropdown3-content,
+.dropdown4:hover .dropdown4-content {
+    display: block;
+}
+
+.formulario {
+    background-color: #f9f9f9; /* Color de fondo */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    max-width: 400px; /* Ancho máximo */
+    margin: 20px auto; /* Centrado en la página */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.formulario h2 {
+    text-align: center; /* Centrar el título */
+    color: #333; /* Color del texto */
+}
+
+.formulario label {
+    display: block; /* Hacer que las etiquetas ocupen toda la línea */
+    margin-bottom: 5px; /* Espacio debajo de las etiquetas */
+    color: #555; /* Color del texto de las etiquetas */
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario select {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espacio debajo de los campos */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario select:focus {
+    border-color: #007BFF; /* Color del borde al enfocar */
+    outline: none; /* Quitar el contorno por defecto */
+}
+
+.formulario input[type="submit"] {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    width: 100%; /* Ancho completo */
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+.formulario input[type="reset"] {
+    background-color: #ff0000; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    width: 100%; /* Ancho completo */
+}
+
+.formulario input[type="reset"]:hover {
+    background-color: #910000; /* Color de fondo al pasar el ratón */
+}
+

@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 15vh;
+    padding: 0 5vw;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.dropdown button {
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+.dropdown button .arrow {
+    margin-left: 0.3em;
+    /* Espacio entre el texto y la flecha */
+    font-size: 0.8em;
+    /* Tamaño de la flecha */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid #000000;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #fba4a4;
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Barra de búsqueda */
+#search-form {
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+#search-bar {
+    padding: 0.5em;
+    font-size: 1em;
+    color: aliceblue;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*LOGIN*/
+.login-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-left: 50vw;
+    /* Espacio entre el buscador y el botón */
+    background-color: transparent;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+.login-button:hover {
+    background-color: #6f7378;
+    /* Color de fondo al pasar el mouse */
+}
+
+/* Sección de navegación */
+nav {
+    background-color: rgb(162, 225, 240);
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+
+}
+
+/* Dropdown */
+.dropdown1,
+.dropdown2,
+.dropdown3,
+.dropdown4 {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin-left: 2vw;
+    margin-right: 5vw;
+}
+
+.dropdown1 button,
+.dropdown2 button,
+.dropdown3 button,
+.dropdown4 button {
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;
+    color: #000000;
+    cursor: pointer;
+    border: black;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 1.5vh;
+}
+
+.dropdown1 button .arrow,
+.dropdown2 button .arrow,
+.dropdown3 button .arrow,
+.dropdown4 button .arrow {
+    margin-left: 0.3em;
+    font-size: 0.8em;
+}
+
+.dropdown1-content,
+.dropdown2-content,
+.dropdown3-content,
+.dropdown4-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid #000000;
+}
+
+.dropdown1-content a,
+.dropdown2-content a,
+.dropdown3-content a,
+.dropdown4-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown1-content a:hover,
+.dropdown2-content a:hover,
+.dropdown3-content a:hover,
+.dropdown4-content a:hover {
+    background-color: #becef0;
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.dropdown1:hover .dropdown1-content,
+.dropdown2:hover .dropdown2-content,
+.dropdown3:hover .dropdown3-content,
+.dropdown4:hover .dropdown4-content {
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    font-size: 50px;
+    text-shadow: 2px black;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+.image-luna-container {
+    display: flex;
+    align-items: center;
+}
+
+.image-luna-container p {
+    margin: 0;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-left: 5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.image-luna-container img {
+    width: 20%;
+    height: auto;
+    content: 0;
+    margin-left: 5vw;
+}
+
+.image-luna-container img:hover {
+    transform: scale(1.1);
+    /* Aumenta el tamaño de la imagen */
+    transition: transform 0.3s;
+    /* Suaviza la transición */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 0 10px;
+    padding: 15px;
+    background-color: rgb(161, 223, 244);
+    text-align: center;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease;
+}
+
+.flex-item:hover {
+    background-color: rgb(62, 150, 180);
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-toggle {
+    display: none; /* Ocultar el checkbox */
+}
+
+.modal-toggle:checked + .modal {
+    display: block; /* Mostrar el modal cuando el checkbox está marcado */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/tienda.css">
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown-content">
+                <a href="index.html">Inicio</a>
+                <a href="humanosespacio.html">Tienda</a>
+            </div>
+        </div>
+        <form action="/search" method="get" id="search-form">
+            <input type="text" name="query" placeholder="Search..." id="search-bar">
+        </form>
+        <a href="login.html" class="login-button">Login</a>
+    </header>
+
+    <nav>
+        <div class="dropdown1">
+            <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown1-content">
+                <a href="sol.html">Sol</a>
+                <a href="dwarfplanets.html">Planetas enanos</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
+            <div class="dropdown2-content">
+                <a href="mercurio.html">Mercurio</a>
+                <a href="venus.html">Venus</a>
+                <a href="tierra.html">Tierra</a>
+                <a href="marte.html">Marte</a>
+                <a href="jupiter.html">Júpiter</a>
+                <a href="saturno.html">Saturno</a>
+                <a href="urano.html">Urano</a>
+                <a href="neptuno.html">Neptuno</a>
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button onclick="toggleDropdown()">Satélites <span class="arrow">&#9660;</span></button>
+            <div class="dropdown3-content">
+                <a href="naturales.html">Naturales</a>
+                <a href="artificiales.html">Artificiales</a>
+            </div>
+        </div>
+        <div class="dropdown4">
+            <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
+            <div class="dropdown4-content">
+                <a href="humanos.html">Humanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="video-container">
+            <video autoplay muted loop id="background-video">
+                <source src="video/123311-727474301_medium.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-text">
+                <h2>SISTEMA SOLAR</h2>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

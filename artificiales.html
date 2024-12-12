@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylessatelites/artificiales.css">
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown-content">
+                <a href="index.html">Inicio</a>
+                <a href="humanosespacio.html">Tienda</a>
+            </div>
+        </div>
+        <form action="/search" method="get" id="search-form">
+            <input type="text" name="query" placeholder="Search..." id="search-bar">
+        </form>
+        <a href="login.html" class="login-button">Login</a>
+    </header>
+
+    <nav>
+        <div class="dropdown1">
+            <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown1-content">
+                <a href="sol.html">Sol</a>
+                <a href="dwarfplanets.html">Planetas enanos</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
+            <div class="dropdown2-content">
+                <a href="mercurio.html">Mercurio</a>
+                <a href="venus.html">Venus</a>
+                <a href="tierra.html">Tierra</a>
+                <a href="marte.html">Marte</a>
+                <a href="jupiter.html">Júpiter</a>
+                <a href="saturno.html">Saturno</a>
+                <a href="urano.html">Urano</a>
+                <a href="neptuno.html">Neptuno</a>
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button onclick="toggleDropdown()">Satélites Terrestros <span class="arrow">&#9660;</span></button>
+            <div class="dropdown3-content">
+                <a href="naturales.html">Naturales</a>
+                <a href="artificiales.html">Artificiales</a>
+            </div>
+        </div>
+        <div class="dropdown4">
+            <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
+            <div class="dropdown4-content">
+                <a href="humanos.html">Humanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="video-container">
+            <video autoplay muted loop id="background-video">
+                <source src="video/satelite.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-text">
+                <h2>SATÉLITES</h2>
+            </div>
+        </div>
+        <section>
+            <div class="image-satelites-container">
+                <img src="images/imgsatelites/satelites.png" alt="satelites">
+                <p>Los <b>satélites artificiales</b> son dispositivos creados por el ser humano y puestos en órbita
+                    alrededor de la Tierra u otros cuerpos celestes. Tienen diversas aplicaciones, como
+                    telecomunicaciones, navegación, observación terrestre, meteorología y ciencia espacial.</p>
+            </div><br>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label for="hbt-modal"><b>Hubble Space Telescope</b></label>
+                    <input type="checkbox" id="hbt-modal" class="modal-toggle">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <label class="close" for="hbt-modal">&times;</label>
+                            <p>Un telescopio que ha capturado impresionantes imágenes del universo.</p>
+                            <img src="images/imgsatelites/hst.jpg" alt="Hubble Space Telescope" class="modal-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <label for="gps-modal"><b>GPS Satellites</b></label>
+                    <input type="checkbox" id="gps-modal" class="modal-toggle">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <label class="close" for="gps-modal">&times;</label>
+                            <p>Una constelación de satélites utilizados para la navegación y localización global.</p>
+                            <img src="images/imgsatelites/gps.jpg" alt="GPS Satellites" class="modal-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <label for="sm-modal"><b>Satélites Meteorológicos</b></label>
+                    <input type="checkbox" id="sm-modal" class="modal-toggle">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <label class="close" for="sm-modal">&times;</label>
+                            <p>Como el GOES (Geostationary Operational Environmental Satellite), utilizados para el
+                                monitoreo del clima y la predicción meteorológica.</p>
+                            <img src="images/imgsatelites/sm.jpg" alt="Satélites Meteorológicos" class="modal-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="javascript/scripts.js"></script>
+</body>
+
+</html>

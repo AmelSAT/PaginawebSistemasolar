@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylessistemasolar/dwarfplanets.css">
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown-content">
+                <a href="index.html">Inicio</a>
+                <a href="humanosespacio.html">Tienda</a>
+        
+            </div>
+        </div>
+        <form action="/search" method="get" id="search-form">
+            <input type="text" name="query" placeholder="Search..." id="search-bar">
+        </form>
+        <a href="login.html" class="login-button">Login</a>
+    </header>
+
+    <nav>
+        <div class="dropdown1">
+            <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown1-content">
+                <a href="sol.html">Sol</a>
+                <a href="dwarfplanets.html">Planetas enanos</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
+            <div class="dropdown2-content">
+                <a href="mercurio.html">Mercurio</a>
+                <a href="venus.html">Venus</a>
+                <a href="tierra.html">Tierra</a>
+                <a href="marte.html">Marte</a>
+                <a href="jupiter.html">Júpiter</a>
+                <a href="saturno.html">Saturno</a>
+                <a href="urano.html">Urano</a>
+                <a href="neptuno.html">Neptuno</a>
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button onclick="toggleDropdown()">Satélites <span class="arrow">&#9660;</span></button>
+            <div class="dropdown3-content">
+                <a href="naturales.html">Naturales</a>
+                <a href="artificiales.html">Artificiales</a>
+            </div>
+        </div>
+        <div class="dropdown4">
+            <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
+            <div class="dropdown4-content">
+                <a href="humanos.html">Humanos</a>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <main>
+        <h3>PLANETAS ENANOS</h3><br>
+        <br>
+        <div class="image-pluton-container">
+            <img src="images/imgplanetasenanos/plutonjpg.jpg" alt="planetaenano1">
+            <p><b>PLUTÓN</b><br>
+                <br><b>Ubicación:</b> Cinturón de Kuiper<br>
+               <b> Descubierto:</b> 1930 por Clyde Tombaugh<br>
+                <b>Datos Curiosos:</b> Originalmente considerado el noveno planeta de nuestro Sistema Solar, Plutón fue reclasificado como planeta enano en 2006. Tiene cinco lunas conocidas, siendo Caronte la más grande.</p>
+        </div>
+        <div class="image-eris-container">
+            <img src="images/imgplanetasenanos/erisdwarf.png" alt="planetaenano2">
+            <p><b>ERIS</b><br>
+                <br><b>Ubicación:</b> Disco disperso (más allá del cinturón de Kuiper)<br>
+                <b> Descubierto:</b> 2005 por el equipo de Michael E. Brown <br>
+                <b>Datos Curiosos:</b> Eris es casi del mismo tamaño que Plutón y su descubrimiento fue uno de los factores que llevó a la reclasificación de Plutón. Tiene una luna conocida llamada Disnomia.</p>
+        </div>
+        <div class="image-haumea-container">
+            <img src="images/imgplanetasenanos/haumea2.png" alt="planetaenano3">
+            <p><b>HAUMEA</b><br>
+                <br><b>Ubicación:</b> Cinturón de Kuiper<br>
+                <b> Descubierto:</b> 2004 por el equipo de Mike Brown, aunque también fue reclamado por un equipo español en 2005<br>
+                 <b>Datos Curiosos:</b> Haumea es notable por su forma extremadamente alargada y rápida rotación. Tiene dos lunas conocidas, Hi'iaka y Namaka. </p>
+        </div>
+        <div class="image-makemake-container">
+            <img src="images/imgplanetasenanos/makemakedwarf.png" alt="planetaenano4">
+            <p><b>MAKEMAKE</b><br>
+                <br><b>Ubicación:</b> Cinturón de Kuiper <br>
+                <b> Descubierto:</b> 2005 por un equipo dirigido por Michael E. Brown <br>
+                 <b>Datos Curiosos:</b> Makemake es el tercer objeto más grande conocido en el cinturón de Kuiper y tiene una luna conocida. </p>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylesplanetas/marte.css">
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown-content">
+                <a href="index.html">Inicio</a>
+                <a href="humanosespacio.html">Tienda</a>
+            </div>
+        </div>
+        <form action="/search" method="get" id="search-form">
+            <input type="text" name="query" placeholder="Search..." id="search-bar">
+        </form>
+        <a href="login.html" class="login-button">Login</a>
+    </header>
+
+    <nav>
+        <div class="dropdown1">
+            <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown1-content">
+                <a href="sol.html">Sol</a>
+                <a href="dwarfplanets.html">Planetas enanos</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
+            <div class="dropdown2-content">
+                <a href="mercurio.html">Mercurio</a>
+                <a href="venus.html">Venus</a>
+                <a href="tierra.html">Tierra</a>
+                <a href="marte.html">Marte</a>
+                <a href="jupiter.html">Júpiter</a>
+                <a href="saturno.html">Saturno</a>
+                <a href="urano.html">Urano</a>
+                <a href="neptuno.html">Neptuno</a>
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button onclick="toggleDropdown()">Satélites <span class="arrow">&#9660;</span></button>
+            <div class="dropdown3-content">
+                <a href="naturales.html">Naturales</a>
+                <a href="artificiales.html">Artificiales</a>
+            </div>
+        </div>
+        <div class="dropdown4">
+            <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
+            <div class="dropdown4-content">
+                <a href="humanos.html">Humanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h3>MARTE</h3>
+            <div class="image-marte-container">
+                <img src="images/imgplanetas/marte.png" alt="marte">
+                <p>Marte es el cuarto planeta desde el Sol, ubicado a una distancia media de aproximadamente 227.9
+                    millones de kilómetros. </p>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item"><b>CARACTERÍSTICAS PRINCIPALES</b></div>
+                <div class="flex-item"><b>ROTACIÓN Y ORBITA</b></div>
+                <div class="flex-item"><b>HISTORIA Y EXPLORACIÓN</b></div>
+            </div>
+            <div class="flex-container1">
+                <div class="flex-item1">Marte tiene un diámetro de aproximadamente 6,779 kilómetros, lo que lo hace
+                    cerca de la mitad del tamaño de la Tierra.<br>
+                    <br> Marte es un planeta rocoso compuesto principalmente de silicatos y óxidos de hierro, que le dan su característico color rojo.<br>
+                    <br>La superficie de Marte presenta una gran variedad de características geológicas, incluyendo volcanes gigantes, valles, desiertos y casquetes polares.<br>
+                    <br>Marte alberga el volcán más grande del Sistema Solar, Olympus Mons, que tiene aproximadamente 22 kilómetros de altura.
+                </div>
+                <div class="flex-item1">Marte tarda aproximadamente 687 días terrestres en completar una órbita alrededor del Sol, lo que define su año marciano.<br>
+                    <br>Un día en Marte (o sol) dura aproximadamente 24.6 horas, muy similar a un día en la Tierra.<br>
+                    <br> Marte tiene estaciones como la Tierra debido a la inclinación de su eje, pero cada estación dura aproximadamente el doble de tiempo debido a su órbita más larga.
+                </div>
+                <div class="flex-item1">- Viking 1 y 2 (1976): Primeros landers exitosos en Marte, enviados por la NASA.<br>
+                    <br>- Pathfinder y Sojourner (1997): Primer rover en Marte.<br>
+                    <br>- Mars Rovers (Spirit y Opportunity): Exploraron la superficie marciana durante años, descubriendo evidencia de agua pasada.<br>
+                    <br>- Curiosity Rover (2012-presente): Ha estado investigando el clima y la geología marciana.<br>
+                    <br>- InSight Lander (2018-presente): Está estudiando el interior de Marte.<br>
+                    <br>- Perseverance Rover (2021-presente): Explorando el cráter Jezero y buscando signos de vida pasada, además de recolectar muestras para una futura misión de retorno.
+                </div>
+            </div>
+        </section>
+        <section class="planet-images">
+            <h3>¿Qué planeta quieres explorar?</h3>
+            <div class="planet-images-container">
+                <a href="mercurio.html"><img src="images/imgplanetas/mercurio.png" alt="Mercurio"></a>
+                <a href="venus.html"><img src="images/imgplanetas/venuss.jpg" alt="Venus"></a>
+                <a href="tierra.html"><img src="images/imgplanetas/tierra.jpg" alt="Tierra"></a>
+                <a href="marte.html"><img src="images/imgplanetas/marte.png" alt="Marte"></a>
+                <a href="jupiter.html"><img src="images/imgplanetas/jupiter.jpg" alt="Júpiter"></a>
+                <a href="saturno.html"><img src="images/imgplanetas/saturno.png" alt="Saturno"></a>
+                <a href="urano.html"><img src="images/imgplanetas/urano.png" alt="Urano"></a>
+                <a href="neptuno.html"><img src="images/imgplanetas/neptuno.png" alt="Neptuno"></a>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

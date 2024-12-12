@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylessatelites/naturales.css">
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown-content">
+                <a href="index.html">Inicio</a>
+                <a href="humanosespacio.html">Tienda</a>
+            </div>
+        </div>
+        <form action="/search" method="get" id="search-form">
+            <input type="text" name="query" placeholder="Search..." id="search-bar">
+        </form>
+        <a href="login.html" class="login-button">Login</a>
+    </header>
+
+    <nav>
+        <div class="dropdown1">
+            <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown1-content">
+                <a href="sol.html">Sol</a>
+                <a href="dwarfplanets.html">Planetas enanos</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
+            <div class="dropdown2-content">
+                <a href="mercurio.html">Mercurio</a>
+                <a href="venus.html">Venus</a>
+                <a href="tierra.html">Tierra</a>
+                <a href="marte.html">Marte</a>
+                <a href="jupiter.html">Júpiter</a>
+                <a href="saturno.html">Saturno</a>
+                <a href="urano.html">Urano</a>
+                <a href="neptuno.html">Neptuno</a>
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button onclick="toggleDropdown()">Satélites Terrestros <span class="arrow">&#9660;</span></button>
+            <div class="dropdown3-content">
+                <a href="naturales.html">Naturales</a>
+                <a href="artificiales.html">Artificiales</a>
+            </div>
+        </div>
+        <div class="dropdown4">
+            <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
+            <div class="dropdown4-content">
+                <a href="humanos.html">Humanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="video-container">
+            <video autoplay muted loop id="background-video">
+                <source src="video/luna.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-text">
+                <h2>LUNA</h2>
+            </div>
+        </div>
+        <section>
+            <div class="image-luna-container">
+                <img src="images/imgsatelites/luna.png" alt="luna">
+                <p>La Luna es el único satélite natural de la Tierra</p>
+            </div><br>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label for="crateres-modal"><b>CRÁTERES</b></label>
+                    <input type="checkbox" id="crateres-modal" class="modal-toggle">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <label class="close" for="crateres-modal">&times;</label>
+                            <p>La superficie lunar está salpicada de cráteres de impacto de diferentes tamaños, formados
+                                por la colisión de meteoritos y asteroides a lo largo de su historia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <label for="mareslunares-modal"><b>MARES LUNARES</b></label>
+                    <input type="checkbox" id="mareslunares-modal" class="modal-toggle">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <label class="close" for="mareslunares-modal">&times;</label>
+                            <p>Son grandes llanuras de basalto que se formaron por antiguas erupciones volcánicas. A
+                                pesar de su nombre, no contienen agua. Los mares más conocidos incluyen el Mare Imbrium
+                                y el Mare Tranquillitatis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <label for="montyvalles-modal"><b>MONTAÑAS Y VALLES</b></label>
+                    <input type="checkbox" id="montyvalles-modal" class="modal-toggle">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <label class="close" for="montyvalles-modal">&times;</label>
+                            <p>La Luna también tiene montañas, como los Montes Apeninos, y valles, como el Vallis
+                                Schröteri.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

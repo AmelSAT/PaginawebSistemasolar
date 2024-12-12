@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown-content">
+                <a href="index.html">Inicio</a>
+                <a href="humanosespacio.html">Tienda</a>
+            </div>
+        </div>
+        <form action="/search" method="get" id="search-form">
+            <input type="text" name="query" placeholder="Search..." id="search-bar">
+        </form>
+        <a href="login.html" class="login-button">Login</a>
+    </header>
+
+    <nav>
+        <div class="dropdown1">
+            <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown1-content">
+                <a href="sol.html">Sol</a>
+                <a href="dwarfplanets.html">Planetas enanos</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
+            <div class="dropdown2-content">
+                <a href="mercurio.html">Mercurio</a>
+                <a href="venus.html">Venus</a>
+                <a href="tierra.html">Tierra</a>
+                <a href="marte.html">Marte</a>
+                <a href="jupiter.html">Júpiter</a>
+                <a href="saturno.html">Saturno</a>
+                <a href="urano.html">Urano</a>
+                <a href="neptuno.html">Neptuno</a>
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button onclick="toggleDropdown()">Satélites <span class="arrow">&#9660;</span></button>
+            <div class="dropdown3-content">
+                <a href="naturales.html">Naturales</a>
+                <a href="artificiales.html">Artificiales</a>
+            </div>
+        </div>
+        <div class="dropdown4">
+            <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
+            <div class="dropdown4-content">
+                <a href="humanos.html">Humanos</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- AQUÍ AÑADIMOS LA SECCIÓN DE LOS FORMULARIOS -->
+        <form class="formulario" id="datos-personales">
+            <h2>LOGIN</h2>
+            <label for="nombre">Nombre *</label>
+            <input type="text" id="nombre" placeholder="Spongebob" required><br>
+            <label for="apellidos">Apellidos *</label>
+            <input type="text" id="apellidos" placeholder="Squarepants" required><br>
+            <label for="ciudad">Ciudad: *</label>
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ingresa tu ciudad" required><br>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Ingresa tu dirección" >
+            <label for="codigo-postal">CP:</label>
+            <input type="text" id="codigo-postal" name="codigo-postal" placeholder="Ingresa tu código postal"><br>
+            <!-- DESPLEGABLE PARA MOSTRAR LOS PAÍSES-->
+            <label for="pais">País: *</label>
+            <select id="pais" name="pais" required>
+                <option value="argentina">Argelia</option>
+                <option value="australia">Australia</option>
+                <option value="alemania">Alemania</option>
+                <option value="brasil">Brasil</option>
+                <option value="canada">Canadá</option>
+                <option value="china">China</option>
+                <option value="egipto">Egipto</option>
+                <option value="espana">España</option>
+                <option value="estados-unidos">Estados Unidos</option>
+                <option value="francia">Francia</option>
+                <option value="india">India</option>
+                <option value="italia">Italia</option>
+                <option value="japon">Japón</option>
+                <option value="mexico">México</option>
+                <option value="reino-unido">Reino Unido</option>
+                <option value="rusia">Rusia</option>
+                <option value="sudafrica">Sudáfrica</option>
+                <option value="suecia">Suecia</option>
+                <option value="suiza">Suiza</option>
+                <option value="turquia">Turquía</option>
+                <option value="otro">Otro</option>
+                <input type="text" id="pais" name="pais" placeholder="Palestina" required>
+            </select><br>
+            <!-- DESPLEGABLE PARA MOSTRAR LOS PREFIJOS DE LOS NÚMEROS DE TELÉFONO DE LOS DISTINTOS PAÍSES-->
+            <label for="telefono">Teléfono: *</label>
+            <select id="prefijo" name="prefijo" required>
+                <option value="+1">+1 (EE.UU.)</option>
+                <option value="+34">+34 (España)</option>
+                <option value="+44">+44 (Reino Unido)</option>
+                <option value="+49">+49 (Alemania)</option>
+                <option value="+81">+81 (Japón)</option>
+                <option value="+52">+52 (México)</option>
+                <option value="+54">+54 (Argentina)</option>
+                <option value="+33">+33 (Francia)</option>
+                <option value="+39">+39 (Italia)</option>
+                <option value="+86">+86 (China)</option>
+                <option value="+91">+91 (India)</option>
+                <option value="+61">+61 (Australia)</option>
+                <option value="+55">+55 (Brasil)</option>
+                <option value="+7">+7 (Rusia)</option>
+                <option value="+27">+27 (Sudáfrica)</option>
+                <option value="+82">+82 (Corea del Sur)</option>
+                <option value="+20">+20 (Egipto)</option>
+                <option value="+234">+234 (Nigeria)</option>
+                <option value="+90">+90 (Turquía)</option>
+                <option value="+966">+966 (Arabia Saudita)</option>
+                <option value="otro">Otro</option>
+            </select>
+            <option value="otro">Otro </option>
+                <input type="text" id="pais" name="pais" placeholder="+ xx" required>
+            <label for="teléfono">Teléfono</label>
+            <input type="text" id="teléfono" placeholder="666-666-666" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br>
+            <label for="email">Email: *</label>
+            <input type="email" id="email" name="email" placeholder="spongebob@square.pants"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Por favor, ingresa una dirección de email válida (spongebob@squarepants.com)" required><br>
+            <!-- DESPLEGABLE PARA MOSTRAR LOS MÉTODOS DE PAGO-->
+            <label for="Pago">Pago</label>
+            <select>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Visa">Visa</option>
+                <option value="GiftCard">GiftCard</option>
+                <option value="Paypal">Paypal</option>
+            </select><br>
+            <label>
+                <input type="checkbox" required>
+                Acepto los términos y condiciones
+            </label><br>
+            <label>
+                <input type="checkbox" required>
+                Quiero recibir todas las nuevas novedades sobre el espacio
+            </label><br>
+            <br>
+            <input type="reset"><br>
+            <br>
+            <input type="submit">
+        </form>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

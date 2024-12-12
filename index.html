@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown-content">
+                <a href="index.html">Inicio</a>
+                <a href="humanosespacio.html">Tienda</a>
+            </div>
+        </div>
+        <form action="/search" method="get" id="search-form">
+            <input type="text" name="query" placeholder="Search..." id="search-bar">
+        </form>
+        <a href="login.html" class="login-button">Login</a>
+    </header>
+
+    <nav>
+        <div class="dropdown1">
+            <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown1-content">
+                <a href="sol.html">Sol</a>
+                <a href="dwarfplanets.html">Planetas enanos</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
+            <div class="dropdown2-content">
+                <a href="mercurio.html">Mercurio</a>
+                <a href="venus.html">Venus</a>
+                <a href="tierra.html">Tierra</a>
+                <a href="marte.html">Marte</a>
+                <a href="jupiter.html">Júpiter</a>
+                <a href="saturno.html">Saturno</a>
+                <a href="urano.html">Urano</a>
+                <a href="neptuno.html">Neptuno</a>
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button onclick="toggleDropdown()">Satélites Terrestres <span class="arrow">&#9660;</span></button>
+            <div class="dropdown3-content">
+                <a href="naturales.html">Naturales</a>
+                <a href="artificiales.html">Artificiales</a>
+            </div>
+        </div>
+        <div class="dropdown4">
+            <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
+            <div class="dropdown4-content">
+                <a href="humanos.html">Humanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="video-container">
+            <video autoplay muted loop id="background-video">
+                <source src="video/123311-727474301_medium.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-text">
+                <h2>SISTEMA SOLAR</h2>
+            </div>
+        </div>
+        <div class="content">
+            <h4>Nuestro Sistema Solar</h4>
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="images/imgindex/muchosmundos.jpg" alt="sistsolar">
+                </div>
+                <div class="image-item">
+                    <img src="images/imgindex/asteroides.jpg" alt="asteroides">
+                </div>
+                <div class="image-item">
+                    <img src="images/imgindex/lunas.jpg" alt="lunas">
+                </div>
+            </div>
+        </div>
+        <section>
+            <h3>SISTEMA SOLAR</h3><br>
+            <div class="image-sistemasolar-container">
+                <img src="images/imgindex/sistsolar.jpg" alt="El sistema solar">
+                <p>El sistema solar es un sistema planetario. <br>
+                Un sistema planetario está constituido por una estrella (o en ocasiones un conjunto de estrellas) y los cuerpos celestes que giran a su alrededor</p>
+            </div><br>
+            <h4>¿Cómo se formó?</h4><br>
+            <div class="image-comosecreo-container">
+                <p>Antes de existiera el sistema solar, su lugar lo ocupaba una enorme nube de gas molecular.<br>
+                    Una preturbación causada por una supernova cercana, hizo que la nebulosa comenzara a colapsar bajo su propia gravedad.</p>
+                <img src="images/imgindex/nubedegasmolecular.jpg" alt="El sistema solar">
+            </div>
+            <div class="image-comosecreo1-container">
+                <img src="images/imgindex/nebulosasolar.jpg" alt="El sistema solar">
+                <p>Hacia el centro de la nebulosa solar la presión y la temperatura aumentaron lo suficiente como para iniciar la fusión nuclear. Fue así como surgió el Sol.</p>
+            </div>
+            <div class="image-comosecreo2-container">
+                <p>Dentro del disco protoplanetario, las partículas de polvo y gas comenzaron a chocar y adherirse, formando cuerpos más grandes llamados planetesimales. Estos planetesimales continuaron creciendo mediante colisiones y acreción.</p>
+                <img src="images/imgindex/planetesimales.jpg" alt="El sistema solar">
+            </div>
+            <div class="image-comosecreo3-container">
+                <img src="images/imgindex/protoplaneta.jpg" alt="El sistema solar">
+                <p>Los planetesimales se unieron para formar cuerpos aún más grandes conocidos como protoplanetas. Estos protoplanetas seguían acumulando material a través de la acreción y las colisiones.</p>
+            </div> 
+            <div class="image-comosecreo4-container">
+                <p>A medida que el Sol joven comenzó a brillar intensamente, los fuertes vientos solares soplaron el gas y el polvo remanente del disco protoplanetario hacia el espacio interestelar, dejando solo los cuerpos sólidos.</p>
+                <img src="images/imgindex/soljoven.avif" alt="El sistema solar">
+            </div>
+            <div class="image-comosecreo5-container">
+                <img src="images/imgindex/formacion.jpg" alt="El sistema solar">
+                <p>Los protoplanetas en las regiones internas del disco se convirtieron en los planetas rocosos (Mercurio, Venus, Tierra y Marte). En las regiones externas más frías, se formaron los planetas gigantes gaseosos (Júpiter y Saturno) y los gigantes helados (Urano y Neptuno).<br>
+                     Además, otros cuerpos como asteroides, cometas y lunas también se formaron durante este período.</p>
+            </div>
+        </section>
+    </main>
+    <script src="javascript/scripts.js"></script>
+</body>
+</html>

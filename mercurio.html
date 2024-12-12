@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylesplanetas/mercurio.css">
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown-content">
+                <a href="index.html">Inicio</a>
+                <a href="humanosespacio.html">Tienda</a>
+            </div>
+        </div>
+        <form action="/search" method="get" id="search-form">
+            <input type="text" name="query" placeholder="Search..." id="search-bar">
+        </form>
+        <a href="login.html" class="login-button">Login</a>
+    </header>
+
+    <nav>
+        <div class="dropdown1">
+            <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown1-content">
+                <a href="sol.html">Sol</a>
+                <a href="dwarfplanets.html">Planetas enanos</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
+            <div class="dropdown2-content">
+                <a href="mercurio.html">Mercurio</a>
+                <a href="venus.html">Venus</a>
+                <a href="tierra.html">Tierra</a>
+                <a href="marte.html">Marte</a>
+                <a href="jupiter.html">Júpiter</a>
+                <a href="saturno.html">Saturno</a>
+                <a href="urano.html">Urano</a>
+                <a href="neptuno.html">Neptuno</a>
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button onclick="toggleDropdown()">Satélites <span class="arrow">&#9660;</span></button>
+            <div class="dropdown3-content">
+                <a href="naturales.html">Naturales</a>
+                <a href="artificiales.html">Artificiales</a>
+            </div>
+        </div>
+        <div class="dropdown4">
+            <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
+            <div class="dropdown4-content">
+                <a href="humanos.html">Humanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h3>MERCURIO</h3>
+            <div class="image-mercurio-container">
+                <img src="images/imgplanetas/mercurio.png" alt="mercurio">
+                <p>Mercurio es el primer planeta del Sistema Solar, situado a una distancia media de aproximadamente
+                    57.91 millones de kilómetros del Sol. </p>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item"><b>CARACTERÍSTICAS PRINCIPALES</b></div>
+                <div class="flex-item"><b>ROTACIÓN Y ORBITA</b></div>
+                <div class="flex-item"><b>HISTORIA Y EXPLORACIÓN</b></div>
+            </div>
+            <div class="flex-container1">
+                <div class="flex-item1">Es el planeta más pequeño del Sistema Solar, con un diámetro de unos 4,880
+                    kilómetros, un poco más grande que la Luna de la Tierra.<br>
+                    <br> Mercurio es un planeta rocoso con una gran cantidad de hierro en su núcleo, lo que lo hace muy
+                    denso. Su núcleo representa cerca del 85% de su volumen.<br>
+                    <br>La proximidad al Sol y la casi inexistencia de atmósfera hace que Mercurio experimente temperaturas extremas, con hasta 430 °C durante el día y -180 °C durante la noche.
+                </div>
+                <div class="flex-item1">Mercurio tiene una órbita muy excéntrica y su distancia del Sol varía
+                    considerablemente a lo largo de su año.<br>
+                    <br> Un año en Mercurio (el tiempo que tarda en dar una vuelta completa alrededor del Sol) dura
+                    aproximadamente 88 días terrestres.<br>
+                    <br>Mercurio rota sobre su eje muy lentamente, completando una rotación cada 59 días terrestres.
+                    Debido a esto, un día solar en Mercurio (de un amanecer al siguiente) dura aproximadamente 176 días
+                    terrestres.
+                </div>
+                <div class="flex-item1">Mercurio ha sido conocido desde la antigüedad y fue observado por astrónomos de
+                    muchas civilizaciones antiguas, incluyendo los babilonios y los griegos.<br>
+                    <br>- Mariner 10 (1974-1975): La primera nave en visitar Mercurio, proporcionando las primeras imágenes de su superficie.<br>
+                    <br>- MESSENGER (2004-2015): Esta misión de la NASA orbitó Mercurio y proporcionó una gran cantidad de datos sobre su composición, geología y campo magnético.<br>
+                    <br>BepiColombo (2018): Una misión conjunta de la Agencia Espacial Europea (ESA) y la Agencia de Exploración Aeroespacial de Japón (JAXA), que está actualmente en camino a Mercurio para realizar estudios detallados del planeta.
+                </div>
+            </div>
+        </section>
+        <section class="planet-images">
+            <h3>¿Qué planeta quieres explorar?</h3>
+            <div class="planet-images-container">
+                <a href="mercurio.html"><img src="images/imgplanetas/mercurio.png" alt="Mercurio"></a>
+                <a href="venus.html"><img src="images/imgplanetas/venuss.jpg" alt="Venus"></a>
+                <a href="tierra.html"><img src="images/imgplanetas/tierra.jpg" alt="Tierra"></a>
+                <a href="marte.html"><img src="images/imgplanetas/marte.png" alt="Marte"></a>
+                <a href="jupiter.html"><img src="images/imgplanetas/jupiter.jpg" alt="Júpiter"></a>
+                <a href="saturno.html"><img src="images/imgplanetas/saturno.png" alt="Saturno"></a>
+                <a href="urano.html"><img src="images/imgplanetas/urano.png" alt="Urano"></a>
+                <a href="neptuno.html"><img src="images/imgplanetas/neptuno.png" alt="Neptuno"></a>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

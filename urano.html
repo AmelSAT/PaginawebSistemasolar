@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylesplanetas/urano.css">
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown-content">
+                <a href="index.html">Inicio</a>
+                <a href="humanosespacio.html">Tienda</a>
+                
+            </div>
+        </div>
+        <form action="/search" method="get" id="search-form">
+            <input type="text" name="query" placeholder="Search..." id="search-bar">
+        </form>
+        <a href="login.html" class="login-button">Login</a>
+    </header>
+
+    <nav>
+        <div class="dropdown1">
+            <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
+            <div class="dropdown1-content">
+                <a href="sol.html">Sol</a>
+                <a href="dwarfplanets.html">Planetas enanos</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
+            <div class="dropdown2-content">
+                <a href="mercurio.html">Mercurio</a>
+                <a href="venus.html">Venus</a>
+                <a href="tierra.html">Tierra</a>
+                <a href="marte.html">Marte</a>
+                <a href="jupiter.html">Júpiter</a>
+                <a href="saturno.html">Saturno</a>
+                <a href="urano.html">Urano</a>
+                <a href="neptuno.html">Neptuno</a>
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button onclick="toggleDropdown()">Satélites <span class="arrow">&#9660;</span></button>
+            <div class="dropdown3-content">
+                <a href="naturales.html">Naturales</a>
+                <a href="artificiales.html">Artificiales</a>
+            </div>
+        </div>
+        <div class="dropdown4">
+            <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
+            <div class="dropdown4-content">
+                <a href="humanos.html">Humanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h3>URANO</h3>
+            <div class="image-urano-container">
+                <img src="images/imgplanetas/urano.png" alt="urano">
+                <p>Urano es el séptimo planeta desde el Sol, ubicado a una distancia media de aproximadamente 2,870
+                    millones de kilómetros. </p>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item"><b>CARACTERÍSTICAS PRINCIPALES</b></div>
+                <div class="flex-item"><b>ANILLOS Y LUNAS</b></div>
+                <div class="flex-item"><b>HISTORIA Y EXPLORACIÓN</b></div>
+            </div>
+            <div class="flex-container1">
+                <div class="flex-item1">Urano es el tercer planeta más grande del Sistema Solar en términos de diámetro,
+                    con aproximadamente 50,724 kilómetros.<br>
+                    <br> Urano es un gigante helado compuesto principalmente de hidrógeno y helio, con una gran
+                    proporción de agua, amoníaco y metano en forma de hielo.<br>
+                    <br>El color azul verdoso de Urano se debe a la presencia de metano en su atmósfera, que absorbe la
+                    luz roja y refleja la luz azul.<br>
+                    <br>La atmósfera de Urano está compuesta principalmente de hidrógeno y helio, con un manto de agua,
+                    amoníaco y metano en forma de hielo.
+                </div>
+                <div class="flex-item1">Urano tiene un sistema de anillos delgados y oscuros que fueron descubiertos en
+                    1977. Hay 13 anillos conocidos, y el sistema de anillos de Urano es menos prominente que el de
+                    Saturno.<br>
+                    <br>Urano tiene al menos 27 lunas conocidas. Las lunas más grandes son Miranda, Ariel, Umbriel,
+                    Titania y Oberón.
+                </div>
+                <div class="flex-item1"> - Voyager 2 (1986): La única misión que ha visitado Urano es la Voyager 2 de la NASA, que
+                    sobrevoló el planeta en 1986. La misión proporcionó imágenes detalladas y datos sobre Urano, sus
+                    anillos y lunas, y reveló muchas características sorprendentes.
+                </div>
+            </div>
+        </section>
+        <section class="planet-images">
+            <h3>¿Qué planeta quieres explorar?</h3>
+            <div class="planet-images-container">
+                <a href="mercurio.html"><img src="images/imgplanetas/mercurio.png" alt="Mercurio"></a>
+                <a href="venus.html"><img src="images/imgplanetas/venuss.jpg" alt="Venus"></a>
+                <a href="tierra.html"><img src="images/imgplanetas/tierra.jpg" alt="Tierra"></a>
+                <a href="marte.html"><img src="images/imgplanetas/marte.png" alt="Marte"></a>
+                <a href="jupiter.html"><img src="images/imgplanetas/jupiter.jpg" alt="Júpiter"></a>
+                <a href="saturno.html"><img src="images/imgplanetas/saturno.png" alt="Saturno"></a>
+                <a href="urano.html"><img src="images/imgplanetas/urano.png" alt="Urano"></a>
+                <a href="neptuno.html"><img src="images/imgplanetas/neptuno.png" alt="Neptuno"></a>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
