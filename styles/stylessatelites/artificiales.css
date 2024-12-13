@@ -1,32 +1,37 @@
+/* Eliminar márgenes y rellenos de todos los elementos */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Estilos para el cuerpo de la página */
 body {
     position: relative;
-    margin: 0;
-    overflow-y: scroll;
+    overflow-y: scroll; /* Permitir desplazamiento vertical */
 }
 
+/* Estilos para el contenedor principal */
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Disposición en columna */
 }
 
+/* Contenedor del video */
 .video-container {
-    height: 100vh;
-    overflow: hidden;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden; /* Oculta el desbordamiento */
 }
 
+/* Estilos para el encabezado */
 header {
     display: flex;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    height: 15vh;
-    padding: 0 5vw;
+    align-items: center; /* Centrado vertical de los elementos */
+    background-color: rgb(0, 0, 0); /* Fondo negro */
+    height: 15vh; /* Altura del 15% de la ventana */
+    padding: 0 5vw; /* Relleno horizontal */
 }
 
+/* Menú desplegable */
 .dropdown {
     position: relative;
     display: flex;
@@ -34,50 +39,50 @@ header {
     text-align: center;
 }
 
+/* Botones del menú desplegable */
 .dropdown button {
     font-size: 20px;
     font-weight: bold;
     background: transparent;
-    color: #ffffff;
+    color: #ffffff; /* Texto blanco */
     cursor: pointer;
     border: none;
     padding: 0.5em 1em;
-    border-radius: 4px;
+    border-radius: 4px; /* Bordes redondeados */
 }
 
 .dropdown button .arrow {
-    margin-left: 0.3em;
-    /* Espacio entre el texto y la flecha */
-    font-size: 0.8em;
-    /* Tamaño de la flecha */
+    margin-left: 0.3em; /* Espacio entre texto y flecha */
+    font-size: 0.8em; /* Tamaño de la flecha */
 }
 
+/* Contenido del menú desplegable */
 .dropdown-content {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Fondo claro */
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border: 1px solid #000000;
-
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 1; /* Capas superiores */
+    border: 1px solid #000000; /* Borde negro */
 }
 
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
-    text-decoration: none;
+    text-decoration: none; /* Sin subrayado */
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #fba4a4;
-    transform: scale(1.1); 
-    transition: transform 0.2s;
+    background-color: #fba4a4; /* Fondo al pasar el cursor */
+    transform: scale(1.1); /* Aumenta el tamaño del enlace */
+    transition: transform 0.2s; /* Suaviza la transición */
 }
 
+/* Mostrar el contenido del menú al pasar el cursor */
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -86,42 +91,44 @@ header {
 #search-form {
     display: flex;
     align-items: center;
-    margin-left: 5vw;
+    margin-left: 5vw; /* Separación a la izquierda */
 }
 
 #search-bar {
     padding: 0.5em;
     font-size: 1em;
-    color: aliceblue;
-    background-color: black;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    color: aliceblue; /* Texto */
+    background-color: black; /* Fondo */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
 }
-/*LOGIN*/
+
+/* Botón de login */
 .login-button {
     display: inline-block;
     padding: 10px 15px;
     margin-left: 50vw; /* Espacio entre el buscador y el botón */
-    background-color: transparent; /* Color de fondo */
-    color: white; /* Color del texto */
+    background-color: transparent; /* Fondo transparente */
+    color: white; /* Texto blanco */
     text-decoration: none; /* Sin subrayado */
     border-radius: 5px; /* Bordes redondeados */
 }
 
 .login-button:hover {
-    background-color: #6f7378; /* Color de fondo al pasar el mouse */
+    background-color: #6f7378; /* Fondo al pasar el cursor */
 }
+
 /* Sección de navegación */
 nav {
-    background-color: rgb(162, 225, 240);
+    background-color: rgb(162, 225, 240); /* Fondo claro */
     height: 8vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2vw;
-
+    padding: 0 2vw; /* Relleno horizontal */
 }
-/* Dropdown */
+
+/* Menús desplegables adicionales */
 .dropdown1,
 .dropdown2,
 .dropdown3,
@@ -141,7 +148,7 @@ nav {
     font-size: 15px;
     font-weight: bold;
     background: transparent;
-    color: #000000;
+    color: #000000; /* Texto negro */
     cursor: pointer;
     border: black;
     padding: 10px;
@@ -157,6 +164,7 @@ nav {
     font-size: 0.8em;
 }
 
+/* Contenido de los menús desplegables adicionales */
 .dropdown1-content,
 .dropdown2-content,
 .dropdown3-content,
@@ -165,11 +173,11 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Fondo claro */
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border: 1px solid #000000;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 1; /* Capas superiores */
+    border: 1px solid #000000; /* Borde negro */
 }
 
 .dropdown1-content a,
@@ -178,7 +186,7 @@ nav {
 .dropdown4-content a {
     color: black;
     padding: 12px 16px;
-    text-decoration: none;
+    text-decoration: none; /* Sin subrayado */
     display: block;
 }
 
@@ -186,11 +194,12 @@ nav {
 .dropdown2-content a:hover,
 .dropdown3-content a:hover,
 .dropdown4-content a:hover {
-    background-color: #becef0;
-    transform: scale(1.1);
-    transition: transform 0.2s;
+    background-color: #becef0; /* Fondo al pasar el cursor */
+    transform: scale(1.1); /* Aumenta el tamaño del enlace */
+    transition: transform 0.2s; /* Suaviza la transición */
 }
 
+/* Mostrar el contenido del menú al pasar el cursor */
 .dropdown1:hover .dropdown1-content,
 .dropdown2:hover .dropdown2-content,
 .dropdown3:hover .dropdown3-content,
@@ -198,50 +207,50 @@ nav {
     display: block;
 }
 
+/* Texto superpuesto en el video */
 .overlay-text {
     position: absolute;
     top: 40%;
     left: 20%;
-    font-size: 50px;
-    text-shadow: 2px black;
+    font-size: 50px; /* Tamaño del texto */
+    text-shadow: 2px black; /* Sombra del texto */
     transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: 
-        -1px -1px 0 #000000,  
-        1px -1px 0 #000000,
-        -1px 1px 0 #000000,
-        1px 1px 0 #000000; 
+    color: white; /* Color del texto */
     text-align: center;
     padding: 20px;
 }
 
+/* Sección de contenido */
 section {
     padding: 20px;
     margin: 10px;
 }
 
+/* Contenedor de imágenes de satélites */
 .image-satelites-container {
     display: flex; 
     align-items: center; 
 }
+
 .image-satelites-container p {
-    margin: 0;
     padding-left: 10px;
-    font-size: 20px;
+    font-size: 20px; /* Tamaño del texto */
     margin-left: 5vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente */
 }
 
 .image-satelites-container img {
     width: 30%; 
     height: auto;
-    content: 0;
     margin-left: 5vw;
 }
+
 .image-satelites-container img:hover {
     transform: scale(1.1); /* Aumenta el tamaño de la imagen */
     transition: transform 0.3s; /* Suaviza la transición */
 }
+
+/* Contenedor flexible */
 .flex-container {
     display: flex;
     justify-content: space-between;
@@ -252,15 +261,17 @@ section {
     flex: 1;
     margin: 0 10px;
     padding: 15px;
-    background-color: #8b8b8b;
+    background-color: #8b8b8b; /* Fondo gris */
     text-align: center;
-    font-size: 1.5em;
-}
-.flex-item:hover { 
-    background-color: rgb(63, 64, 65); 
-    cursor: pointer; 
+    font-size: 1.5em; /* Tamaño del texto */
 }
 
+.flex-item:hover { 
+    background-color: rgb(63, 64, 65); /* Fondo al pasar el cursor */
+    cursor: pointer; /* Cursor de mano */
+}
+
+/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -270,7 +281,7 @@ section {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
 }
 
 .modal-content {
@@ -281,6 +292,7 @@ section {
     width: 80%;
 }
 
+/* Checkbox para mostrar el modal */
 .modal-toggle {
     display: none; /* Ocultar el checkbox */
 }
@@ -289,6 +301,7 @@ section {
     display: block; /* Mostrar el modal cuando el checkbox está marcado */
 }
 
+/* Botón de cierre del modal */
 .close {
     color: #aaa;
     float: right;

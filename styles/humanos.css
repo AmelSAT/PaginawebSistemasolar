@@ -1,34 +1,40 @@
+/* Reseteo de márgenes y rellenos para todos los elementos */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Estilos para el cuerpo de la página */
 body {
     position: relative;
     margin: 0;
-    overflow-y: scroll;
+    overflow-y: scroll; /* Permite el desplazamiento vertical */
 }
 
+/* Estilos para el contenedor principal */
 main {
     display: flex;
     flex-direction: column;
     width: 100%; 
-    overflow-x: hidden;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
+/* Características del contenedor del video */
 .video-container {
-    height: 100vh;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
     overflow: hidden;
 }
 
+/* Estilos para el encabezado */
 header {
     display: flex;
     align-items: center;
     background-color: rgb(0, 0, 0);
-    height: 15vh;
+    height: 15vh; /* Altura del 15% de la ventana */
     padding: 0 5vw;
 }
 
+/* Estilos para los menús desplegables */
 .dropdown {
     position: relative;
     display: flex;
@@ -49,11 +55,10 @@ header {
 
 .dropdown button .arrow {
     margin-left: 0.3em;
-    /* Espacio entre el texto y la flecha */
     font-size: 0.8em;
-    /* Tamaño de la flecha */
 }
 
+/* Contenido de los menús desplegables */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -64,7 +69,6 @@ header {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border: 1px solid #000000;
-
 }
 
 .dropdown-content a {
@@ -80,6 +84,7 @@ header {
     transition: transform 0.2s;
 }
 
+/* Mostrar el contenido del menú al pasar el cursor */
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -99,20 +104,22 @@ header {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-/*LOGIN*/
+
+/* Botón de login */
 .login-button {
     display: inline-block;
     padding: 10px 15px;
-    margin-left: 50vw; /* Espacio entre el buscador y el botón */
-    background-color: transparent; /* Color de fondo */
-    color: white; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    border-radius: 5px; /* Bordes redondeados */
+    margin-left: 50vw; 
+    background-color: transparent; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
 }
 
 .login-button:hover {
-    background-color: #6f7378; /* Color de fondo al pasar el mouse */
+    background-color: #6f7378; 
 }
+
 /* Sección de navegación */
 nav {
     background-color: rgb(162, 225, 240);
@@ -122,7 +129,8 @@ nav {
     justify-content: space-between;
     padding: 0 2vw;
 }
-/* Dropdown */
+
+/* Menús desplegables adicionales */
 .dropdown1,
 .dropdown2,
 .dropdown3,
@@ -158,6 +166,7 @@ nav {
     font-size: 0.8em;
 }
 
+/* Contenido de los menús desplegables adicionales */
 .dropdown1-content,
 .dropdown2-content,
 .dropdown3-content,
@@ -192,6 +201,7 @@ nav {
     transition: transform 0.2s;
 }
 
+/* Mostrar el contenido del menú al pasar el cursor */
 .dropdown1:hover .dropdown1-content,
 .dropdown2:hover .dropdown2-content,
 .dropdown3:hover .dropdown3-content,
@@ -199,3 +209,113 @@ nav {
     display: block;
 }
 
+/* Estilos para el contenedor de astronautas */
+.astronaut-container {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    margin-bottom: 20px; 
+    margin-top: 5vh;
+}
+
+.astronaut-container a {
+    text-align: center; 
+    text-decoration: none; 
+    color: #000; 
+    transition: transform 0.3s; 
+}
+
+.astronaut-container a:hover {
+    transform: scale(1.05); 
+}
+
+.astronaut-container img {
+    width: 200px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.astronaut4 img {
+    width: 120px;
+}
+
+.astronaut3 img {
+    width: 190px;
+}
+
+/* Información adicional oculta hasta que se activa */
+.info {
+    display: none;
+    margin-top: 20px; 
+    padding: 15px; 
+    background-color: #abddff; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.info p {
+    margin-top: 4vh;
+}
+
+/* Mostrar información adicional al apuntar al ID */
+.info:target {
+    display: block; 
+}
+
+/* Estilos para la sección de entrenamiento */
+.training {
+    margin-top: 30px; 
+    padding: 15px; 
+    background-color: #e9ecef; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.training h2 {
+    color: #000000; 
+}
+
+.training p {
+    color: #000000;
+    margin-top: 3vh; 
+}
+
+.training ul {
+    list-style-type: disc; 
+    margin-left: 20px; 
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.training iframe {
+    margin-left: 25vw;
+}
+
+/* Estilos para la sección de misiones */
+.misiones {
+    margin-top: 30px; 
+    padding: 15px; 
+    background-color: #e9ecef; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.misiones h2 {
+    color: #000000; 
+}
+
+.misiones p {
+    color: #000000;
+    margin-top: 3vh; 
+}
+
+.misiones ul {
+    list-style-type: disc; 
+    margin-left: 20px; 
+    margin-top: 1vw;
+}
+
+.misiones iframe {
+    margin-top: 3vh;
+    margin-left: 25vw;
+}

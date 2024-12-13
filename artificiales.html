@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al archivo CSS para los estilos -->
     <link rel="stylesheet" href="styles/stylessatelites/artificiales.css">
 </head>
 
 <body>
+    <!-- Encabezado de la página -->
     <header>
+        <!-- Menú desplegable para navegación -->
         <div class="dropdown">
             <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
             <div class="dropdown-content">
@@ -16,12 +19,15 @@
                 <a href="humanosespacio.html">Tienda</a>
             </div>
         </div>
+        <!-- Barra de búsqueda -->
         <form action="/search" method="get" id="search-form">
             <input type="text" name="query" placeholder="Search..." id="search-bar">
         </form>
+        <!-- Enlace para el login -->
         <a href="login.html" class="login-button">Login</a>
     </header>
 
+    <!-- Barra de navegación -->
     <nav>
         <div class="dropdown1">
             <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
@@ -59,6 +65,7 @@
     </nav>
 
     <main>
+        <!-- Contenedor de video de fondo -->
         <div class="video-container">
             <video autoplay muted loop id="background-video">
                 <source src="video/satelite.mp4" type="video/mp4">
@@ -67,6 +74,7 @@
                 <h2>SATÉLITES</h2>
             </div>
         </div>
+        <!-- Sección de contenido -->
         <section>
             <div class="image-satelites-container">
                 <img src="images/imgsatelites/satelites.png" alt="satelites">
@@ -75,6 +83,7 @@
                     telecomunicaciones, navegación, observación terrestre, meteorología y ciencia espacial.</p>
             </div><br>
             <div class="flex-container">
+                <!-- Elementos con información modal sobre diferentes satélites -->
                 <div class="flex-item">
                     <label for="hbt-modal"><b>Hubble Space Telescope</b></label>
                     <input type="checkbox" id="hbt-modal" class="modal-toggle">
@@ -112,6 +121,7 @@
             </div>
         </section>
     </main>
+    <!-- Enlace al archivo de JavaScript -->
     <script src="javascript/scripts.js"></script>
 </body>
 
