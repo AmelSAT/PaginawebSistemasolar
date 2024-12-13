@@ -13,7 +13,7 @@ main {
     display: flex;
     flex-direction: column;
 }
-
+/* Características del container del video */
 .video-container {
     height: 100vh;
     overflow: hidden;
@@ -26,7 +26,7 @@ header {
     height: 15vh;
     padding: 0 5vw;
 }
-
+/* Características de los dropdowns */
 .dropdown {
     position: relative;
     display: flex;
@@ -47,9 +47,7 @@ header {
 
 .dropdown button .arrow {
     margin-left: 0.3em;
-    /* Espacio entre el texto y la flecha */
     font-size: 0.8em;
-    /* Tamaño de la flecha */
 }
 
 .dropdown-content {
@@ -101,11 +99,11 @@ header {
 .login-button {
     display: inline-block;
     padding: 10px 15px;
-    margin-left: 50vw; /* Espacio entre el buscador y el botón */
-    background-color: transparent; /* Color de fondo */
-    color: white; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    border-radius: 5px; /* Bordes redondeados */
+    margin-left: 50vw; 
+    background-color: transparent;
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px;
 }
 
 .login-button:hover {
@@ -197,18 +195,168 @@ nav {
     display: block;
 }
 
+.footer {
+    background-color: black;
+    height: 50px; 
+    width: 100%;
+    margin-top: 5%;
+}
 
+main {
+    padding: 40px;
+    background-color: #f9f9f9; 
+}
 
-.overlay-text {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    font-size: 60px;
-    text-shadow: 2px black;
-    transform: translate(-50%, -50%);
-    color: white;
+.productos {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+.producto1 {
+    background-color: #fff; 
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    padding: 15px; 
     text-align: center;
-    padding: 20px;
-    
+    width: 30%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
+}
 
+.producto1:hover {
+    transform: scale(1.05); 
+}
+/*Características de las imagenes de los productos*/
+.producto1 img {
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.producto1 h2 {
+    font-size: 1.5em; 
+}
+
+.producto2 {
+    background-color: #fff; 
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    padding: 15px; 
+    text-align: center; 
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
+}
+
+.producto2:hover {
+    transform: scale(1.05); 
+}
+
+.producto2 img {
+    max-width: 60%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.producto2 h2 {
+    font-size: 1.5em; 
+}
+
+.producto3 {
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 15px; 
+    text-align: center; 
+    width: 30%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s;
+}
+
+.producto3:hover {
+    transform: scale(1.05); 
+}
+
+.producto3 img {
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.producto3 h2 {
+    font-size: 1.5em; 
+}
+.producto4 {
+    background-color: #fff; 
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    padding: 15px; 
+    text-align: center;
+    width: 30%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
+}
+
+.producto4:hover {
+    transform: scale(1.05); 
+}
+
+.producto4 img {
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.producto4 h2 {
+    font-size: 1.5em; 
+}
+
+.producto5 {
+    background-color: #fff; 
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    padding: 15px; 
+    text-align: center; 
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
+}
+
+.producto5:hover {
+    transform: scale(1.05); 
+}
+
+.producto5 img {
+    max-width: 70%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.producto5 h2 {
+    font-size: 1.5em; 
+}
+
+.producto6 {
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 15px; 
+    text-align: center; 
+    width: 30%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s;
+}
+
+.producto6:hover {
+    transform: scale(1.05); 
+}
+
+.producto6 img {
+    max-width: 90%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.producto6 h2 {
+    font-size: 1.5em; 
 }
