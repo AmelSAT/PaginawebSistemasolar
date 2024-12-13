@@ -1,30 +1,39 @@
 <!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
+    <!-- Especifica la codificación de caracteres del documento como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la vista del documento para que sea responsiva en dispositivos móviles -->
     <link rel="stylesheet" href="styles/stylessistemasolar/dwarfplanets.css">
+    <!-- Enlace a un archivo CSS externo para estilos -->
 </head>
-
 <body>
     <header>
+        <!-- Inicio del encabezado del documento -->
         <div class="dropdown">
+            <!-- Contenedor para un menú desplegable -->
             <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
+            <!-- Botón que activa el menú desplegable -->
             <div class="dropdown-content">
+                <!-- Contenido del menú desplegable -->
                 <a href="index.html">Inicio</a>
                 <a href="humanosespacio.html">Tienda</a>
-        
             </div>
         </div>
         <form action="/search" method="get" id="search-form">
+            <!-- Formulario de búsqueda -->
             <input type="text" name="query" placeholder="Search..." id="search-bar">
         </form>
         <a href="login.html" class="login-button">Login</a>
+        <!-- Enlace a la página de login -->
     </header>
 
     <nav>
+        <!-- Inicio de la sección de navegación -->
         <div class="dropdown1">
+            <!-- Menú desplegable para "Sistema Solar" -->
             <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
             <div class="dropdown1-content">
                 <a href="sol.html">Sol</a>
@@ -32,6 +41,7 @@
             </div>
         </div>
         <div class="dropdown2">
+            <!-- Menú desplegable para "Planetas" -->
             <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
             <div class="dropdown2-content">
                 <a href="mercurio.html">Mercurio</a>
@@ -45,6 +55,7 @@
             </div>
         </div>
         <div class="dropdown3">
+            <!-- Menú desplegable para "Satélites" -->
             <button onclick="toggleDropdown()">Satélites <span class="arrow">&#9660;</span></button>
             <div class="dropdown3-content">
                 <a href="naturales.html">Naturales</a>
@@ -52,6 +63,7 @@
             </div>
         </div>
         <div class="dropdown4">
+            <!-- Menú desplegable para "Universo" -->
             <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
             <div class="dropdown4-content">
                 <a href="humanos.html">Humanos</a>
@@ -60,37 +72,41 @@
     </nav>
     <br>
     <main>
+        <!-- Inicio del contenido principal del documento -->
         <h3>PLANETAS ENANOS</h3><br>
         <br>
         <div class="image-pluton-container">
+            <!-- Contenedor de imagen para Plutón -->
             <img src="images/imgplanetasenanos/plutonjpg.jpg" alt="planetaenano1">
             <p><b>PLUTÓN</b><br>
                 <br><b>Ubicación:</b> Cinturón de Kuiper<br>
-               <b> Descubierto:</b> 1930 por Clyde Tombaugh<br>
+               <b>Descubierto:</b> 1930 por Clyde Tombaugh<br>
                 <b>Datos Curiosos:</b> Originalmente considerado el noveno planeta de nuestro Sistema Solar, Plutón fue reclasificado como planeta enano en 2006. Tiene cinco lunas conocidas, siendo Caronte la más grande.</p>
         </div>
         <div class="image-eris-container">
+            <!-- Contenedor de imagen para Eris -->
             <img src="images/imgplanetasenanos/erisdwarf.png" alt="planetaenano2">
             <p><b>ERIS</b><br>
                 <br><b>Ubicación:</b> Disco disperso (más allá del cinturón de Kuiper)<br>
-                <b> Descubierto:</b> 2005 por el equipo de Michael E. Brown <br>
+                <b>Descubierto:</b> 2005 por el equipo de Michael E. Brown <br>
                 <b>Datos Curiosos:</b> Eris es casi del mismo tamaño que Plutón y su descubrimiento fue uno de los factores que llevó a la reclasificación de Plutón. Tiene una luna conocida llamada Disnomia.</p>
         </div>
         <div class="image-haumea-container">
+            <!-- Contenedor de imagen para Haumea -->
             <img src="images/imgplanetasenanos/haumea2.png" alt="planetaenano3">
             <p><b>HAUMEA</b><br>
                 <br><b>Ubicación:</b> Cinturón de Kuiper<br>
-                <b> Descubierto:</b> 2004 por el equipo de Mike Brown, aunque también fue reclamado por un equipo español en 2005<br>
+                <b>Descubierto:</b> 2004 por el equipo de Mike Brown, aunque también fue reclamado por un equipo español en 2005<br>
                  <b>Datos Curiosos:</b> Haumea es notable por su forma extremadamente alargada y rápida rotación. Tiene dos lunas conocidas, Hi'iaka y Namaka. </p>
         </div>
         <div class="image-makemake-container">
+            <!-- Contenedor de imagen para Makemake -->
             <img src="images/imgplanetasenanos/makemakedwarf.png" alt="planetaenano4">
             <p><b>MAKEMAKE</b><br>
                 <br><b>Ubicación:</b> Cinturón de Kuiper <br>
-                <b> Descubierto:</b> 2005 por un equipo dirigido por Michael E. Brown <br>
+                <b>Descubierto:</b> 2005 por un equipo dirigido por Michael E. Brown <br>
                  <b>Datos Curiosos:</b> Makemake es el tercer objeto más grande conocido en el cinturón de Kuiper y tiene una luna conocida. </p>
         </div>
     </main>
 </body>
-
 </html>

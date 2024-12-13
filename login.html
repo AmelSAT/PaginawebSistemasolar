@@ -4,35 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al archivo CSS para los estilos específicos de la página de login -->
     <link rel="stylesheet" href="styles/login.css">
 </head>
 
 <body>
+    <!-- Encabezado de la página -->
     <header>
+        <!-- Menú desplegable para navegación principal -->
         <div class="dropdown">
             <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
             <div class="dropdown-content">
+                <!-- Enlaces dentro del menú desplegable -->
                 <a href="index.html">Inicio</a>
                 <a href="humanosespacio.html">Tienda</a>
             </div>
         </div>
+        <!-- Barra de búsqueda -->
         <form action="/search" method="get" id="search-form">
             <input type="text" name="query" placeholder="Search..." id="search-bar">
         </form>
+        <!-- Enlace para el login -->
         <a href="login.html" class="login-button">Login</a>
     </header>
 
+    <!-- Barra de navegación secundaria -->
     <nav>
+        <!-- Menú desplegable para el Sistema Solar -->
         <div class="dropdown1">
             <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
             <div class="dropdown1-content">
+                <!-- Enlaces a páginas del Sistema Solar -->
                 <a href="sol.html">Sol</a>
                 <a href="dwarfplanets.html">Planetas enanos</a>
             </div>
         </div>
+        <!-- Menú desplegable para Planetas -->
         <div class="dropdown2">
             <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
             <div class="dropdown2-content">
+                <!-- Enlaces a páginas de planetas -->
                 <a href="mercurio.html">Mercurio</a>
                 <a href="venus.html">Venus</a>
                 <a href="tierra.html">Tierra</a>
@@ -43,22 +54,28 @@
                 <a href="neptuno.html">Neptuno</a>
             </div>
         </div>
+        <!-- Menú desplegable para Satélites -->
         <div class="dropdown3">
             <button onclick="toggleDropdown()">Satélites <span class="arrow">&#9660;</span></button>
             <div class="dropdown3-content">
+                <!-- Enlaces a páginas de satélites -->
                 <a href="naturales.html">Naturales</a>
                 <a href="artificiales.html">Artificiales</a>
             </div>
         </div>
+        <!-- Menú desplegable para el Universo -->
         <div class="dropdown4">
             <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
             <div class="dropdown4-content">
+                <!-- Enlace a la página de Humanos -->
                 <a href="humanos.html">Humanos</a>
             </div>
         </div>
     </nav>
+
+    <!-- Contenido principal -->
     <main>
-        <!-- AQUÍ AÑADIMOS LA SECCIÓN DE LOS FORMULARIOS -->
+        <!-- Sección del formulario de login -->
         <form class="formulario" id="datos-personales">
             <h2>LOGIN</h2>
             <label for="nombre">Nombre *</label>
@@ -68,10 +85,10 @@
             <label for="ciudad">Ciudad: *</label>
             <input type="text" id="ciudad" name="ciudad" placeholder="Ingresa tu ciudad" required><br>
             <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" name="direccion" placeholder="Ingresa tu dirección" >
+            <input type="text" id="direccion" name="direccion" placeholder="Ingresa tu dirección"><br>
             <label for="codigo-postal">CP:</label>
             <input type="text" id="codigo-postal" name="codigo-postal" placeholder="Ingresa tu código postal"><br>
-            <!-- DESPLEGABLE PARA MOSTRAR LOS PAÍSES-->
+            <!-- Desplegable para mostrar los países -->
             <label for="pais">País: *</label>
             <select id="pais" name="pais" required>
                 <option value="argentina">Argelia</option>
@@ -95,9 +112,8 @@
                 <option value="suiza">Suiza</option>
                 <option value="turquia">Turquía</option>
                 <option value="otro">Otro</option>
-                <input type="text" id="pais" name="pais" placeholder="Palestina" required>
             </select><br>
-            <!-- DESPLEGABLE PARA MOSTRAR LOS PREFIJOS DE LOS NÚMEROS DE TELÉFONO DE LOS DISTINTOS PAÍSES-->
+            <!-- Desplegable para mostrar los prefijos de los números de teléfono de los distintos países -->
             <label for="telefono">Teléfono: *</label>
             <select id="prefijo" name="prefijo" required>
                 <option value="+1">+1 (EE.UU.)</option>
@@ -121,16 +137,14 @@
                 <option value="+90">+90 (Turquía)</option>
                 <option value="+966">+966 (Arabia Saudita)</option>
                 <option value="otro">Otro</option>
-            </select>
-            <option value="otro">Otro </option>
-                <input type="text" id="pais" name="pais" placeholder="+ xx" required>
+            </select><br>
             <label for="teléfono">Teléfono</label>
             <input type="text" id="teléfono" placeholder="666-666-666" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br>
             <label for="email">Email: *</label>
             <input type="email" id="email" name="email" placeholder="spongebob@square.pants"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 title="Por favor, ingresa una dirección de email válida (spongebob@squarepants.com)" required><br>
-            <!-- DESPLEGABLE PARA MOSTRAR LOS MÉTODOS DE PAGO-->
+            <!-- Desplegable para mostrar los métodos de pago -->
             <label for="Pago">Pago</label>
             <select>
                 <option value="Mastercard">Mastercard</option>
@@ -152,6 +166,7 @@
             <input type="submit">
         </form>
     </main>
+    <!-- Enlace al archivo de JavaScript para funcionalidades -->
     <script src="scripts.js"></script>
 </body>
 

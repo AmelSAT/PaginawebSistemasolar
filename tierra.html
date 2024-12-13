@@ -4,35 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al archivo CSS para los estilos específicos de la página de la Tierra -->
     <link rel="stylesheet" href="styles/stylesplanetas/tierra.css">
 </head>
 
 <body>
+    <!-- Encabezado de la página -->
     <header>
+        <!-- Menú desplegable para navegación principal -->
         <div class="dropdown">
             <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
             <div class="dropdown-content">
+                <!-- Enlaces dentro del menú desplegable -->
                 <a href="index.html">Inicio</a>
                 <a href="humanosespacio.html">Tienda</a>
             </div>
         </div>
+        <!-- Barra de búsqueda -->
         <form action="/search" method="get" id="search-form">
             <input type="text" name="query" placeholder="Search..." id="search-bar">
         </form>
+        <!-- Enlace para el login -->
         <a href="login.html" class="login-button">Login</a>
     </header>
 
+    <!-- Barra de navegación secundaria -->
     <nav>
+        <!-- Menú desplegable para el Sistema Solar -->
         <div class="dropdown1">
             <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
             <div class="dropdown1-content">
+                <!-- Enlaces a páginas del Sistema Solar -->
                 <a href="sol.html">Sol</a>
                 <a href="dwarfplanets.html">Planetas enanos</a>
             </div>
         </div>
+        <!-- Menú desplegable para Planetas -->
         <div class="dropdown2">
             <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
             <div class="dropdown2-content">
+                <!-- Enlaces a páginas de planetas -->
                 <a href="mercurio.html">Mercurio</a>
                 <a href="venus.html">Venus</a>
                 <a href="tierra.html">Tierra</a>
@@ -43,48 +54,65 @@
                 <a href="neptuno.html">Neptuno</a>
             </div>
         </div>
+        <!-- Menú desplegable para Satélites -->
         <div class="dropdown3">
             <button onclick="toggleDropdown()">Satélites <span class="arrow">&#9660;</span></button>
             <div class="dropdown3-content">
+                <!-- Enlaces a páginas de satélites -->
                 <a href="naturales.html">Naturales</a>
                 <a href="artificiales.html">Artificiales</a>
             </div>
         </div>
+        <!-- Menú desplegable para el Universo -->
         <div class="dropdown4">
             <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
             <div class="dropdown4-content">
+                <!-- Enlace a la página de Humanos -->
                 <a href="humanos.html">Humanos</a>
             </div>
         </div>
     </nav>
 
+    <!-- Contenido principal -->
     <main>
         <section>
             <h3>TIERRA</h3>
             <div class="image-tierra-container">
+                <!-- Imagen de la Tierra y descripción -->
                 <img src="images/imgplanetas/tierra.jpg" alt="tierra">
                 <p>La Tierra es el tercer planeta del Sistema Solar, situado a una distancia media de unos 149.6 millones de kilómetros del Sol. </p>
             </div>
             <div class="flex-container">
+                <!-- Sección de características principales -->
                 <div class="flex-item"><b>CARACTERÍSTICAS PRINCIPALES</b></div>
-                <div class="flex-item"><b>ROTACIÓN Y ORBITA</b></div>
+                <!-- Sección de rotación y órbita -->
+                <div class="flex-item"><b>ROTACIÓN Y ÓRBITA</b></div>
+                <!-- Sección de datos curiosos -->
                 <div class="flex-item"><b>DATOS CURIOSOS</b></div>
             </div>
             <div class="flex-container1">
+                <!-- Detalles de las características principales de la Tierra -->
                 <div class="flex-item1">La Tierra está compuesta principalmente de hierro (32%), oxígeno (30%), silicio (15%) y magnesio (13%).<br>
-                <br> La Tierra esta dividida en núcleo, manto y corteza<br>
+                <br> La Tierra está dividida en núcleo, manto y corteza.<br>
                 <br>La atmósfera terrestre está compuesta principalmente de nitrógeno (78%) y oxígeno (21%), con pequeñas cantidades de otros gases como argón, dióxido de carbono y vapor de agua.<br>
-            <br>La Tierra tiene una superficie cubierta aproximadamente en un 71% por agua, y el resto por continentes y islas.</div>
+            <br>La Tierra tiene una superficie cubierta aproximadamente en un 71% por agua, y el resto por continentes y islas.
+                </div>
+                <!-- Detalles sobre la rotación y órbita de la Tierra -->
                 <div class="flex-item1">La Tierra rota sobre su eje una vez cada 24 horas, lo que produce el ciclo de día y noche.<br>
                 <br>La Tierra tarda aproximadamente 365.25 días en completar una órbita alrededor del Sol, lo que define nuestro año.<br>
-                <br>La inclinación del eje terrestre de aproximadamente 23.5 grados es responsable de las estaciones del año.</div>
+                <br>La inclinación del eje terrestre de aproximadamente 23.5 grados es responsable de las estaciones del año.
+                </div>
+                <!-- Datos curiosos sobre la Tierra -->
                 <div class="flex-item1">La Tierra tiene un solo satélite natural, la Luna, que tiene una gran influencia en las mareas y en la estabilidad del eje terrestre.<br>
-                <br>La Tierra posee un campo magnético que protege al planeta de los vientos solares y la radiación cósmica.</div>
+                <br>La Tierra posee un campo magnético que protege al planeta de los vientos solares y la radiación cósmica.
+                </div>
             </div>
         </section>
+        <!-- Sección de imágenes de planetas para explorar -->
         <section class="planet-images">
             <h3>¿Qué planeta quieres explorar?</h3>
             <div class="planet-images-container">
+                <!-- Enlaces a páginas de otros planetas con imágenes -->
                 <a href="mercurio.html"><img src="images/imgplanetas/mercurio.png" alt="Mercurio"></a>
                 <a href="venus.html"><img src="images/imgplanetas/venuss.jpg" alt="Venus"></a>
                 <a href="tierra.html"><img src="images/imgplanetas/tierra.jpg" alt="Tierra"></a>
@@ -96,7 +124,9 @@
             </div>
         </section>
     </main>
+    <!-- Enlace al archivo de JavaScript para funcionalidades -->
     <script src="scripts.js"></script>
 </body>
 </html>
+
    

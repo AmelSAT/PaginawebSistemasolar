@@ -4,36 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al archivo CSS para los estilos específicos de la página del Sol -->
     <link rel="stylesheet" href="styles/stylessistemasolar/sol.css">
 </head>
 
 <body>
+    <!-- Encabezado de la página -->
     <header>
+        <!-- Menú desplegable para navegación principal -->
         <div class="dropdown">
             <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
             <div class="dropdown-content">
+                <!-- Enlaces dentro del menú desplegable -->
                 <a href="index.html">Inicio</a>
                 <a href="humanosespacio.html">Tienda</a>
-
             </div>
         </div>
+        <!-- Barra de búsqueda -->
         <form action="/search" method="get" id="search-form">
             <input type="text" name="query" placeholder="Search..." id="search-bar">
         </form>
+        <!-- Enlace para el login -->
         <a href="login.html" class="login-button">Login</a>
     </header>
 
+    <!-- Barra de navegación secundaria -->
     <nav>
+        <!-- Menú desplegable para el Sistema Solar -->
         <div class="dropdown1">
             <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
             <div class="dropdown1-content">
+                <!-- Enlaces a páginas del Sistema Solar -->
                 <a href="sol.html">Sol</a>
                 <a href="dwarfplanets.html">Planetas enanos</a>
             </div>
         </div>
+        <!-- Menú desplegable para Planetas -->
         <div class="dropdown2">
             <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
             <div class="dropdown2-content">
+                <!-- Enlaces a páginas de planetas -->
                 <a href="mercurio.html">Mercurio</a>
                 <a href="venus.html">Venus</a>
                 <a href="tierra.html">Tierra</a>
@@ -44,22 +54,28 @@
                 <a href="neptuno.html">Neptuno</a>
             </div>
         </div>
+        <!-- Menú desplegable para Satélites -->
         <div class="dropdown3">
             <button onclick="toggleDropdown()">Satélites <span class="arrow">&#9660;</span></button>
             <div class="dropdown3-content">
+                <!-- Enlaces a páginas de satélites -->
                 <a href="naturales.html">Naturales</a>
                 <a href="artificiales.html">Artificiales</a>
             </div>
         </div>
+        <!-- Menú desplegable para el Universo -->
         <div class="dropdown4">
             <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
             <div class="dropdown4-content">
+                <!-- Enlace a la página de Humanos -->
                 <a href="humanos.html">Humanos</a>
             </div>
         </div>
     </nav>
 
+    <!-- Contenido principal -->
     <main>
+        <!-- Contenedor de video de fondo -->
         <div class="video-container">
             <video autoplay muted loop id="background-video">
                 <source src="video/elsol.mp4" type="video/mp4">
@@ -70,12 +86,14 @@
         </div>
         <section>
             <div class="image-sol-container">
+                <!-- Imagen del Sol y descripción -->
                 <img src="images/imgsol/sol.png" alt="sol">
                 <p>El Sol es la estrella en el centro de nuestro Sistema Solar, y es, sin duda, el objeto celeste más
                     importante para la vida en la Tierra. </p>
             </div><br>
         </section>
         <section>
+            <!-- Tabla de información sobre el Sol -->
             <table>
                 <tr>
                     <th>Tipo de Estrella</th>
@@ -93,6 +111,7 @@
             </table>
         </section>
     </main>
+    <!-- Enlace al archivo de JavaScript para funcionalidades -->
     <script src="scripts.js"></script>
 </body>
 </html>

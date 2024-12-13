@@ -4,35 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al archivo CSS para los estilos específicos de la página de Saturno -->
     <link rel="stylesheet" href="styles/stylesplanetas/saturno.css">
 </head>
 
 <body>
+    <!-- Encabezado de la página -->
     <header>
+        <!-- Menú desplegable para navegación principal -->
         <div class="dropdown">
             <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
             <div class="dropdown-content">
+                <!-- Enlaces dentro del menú desplegable -->
                 <a href="index.html">Inicio</a>
                 <a href="humanosespacio.html">Tienda</a>
             </div>
         </div>
+        <!-- Barra de búsqueda -->
         <form action="/search" method="get" id="search-form">
             <input type="text" name="query" placeholder="Search..." id="search-bar">
         </form>
+        <!-- Enlace para el login -->
         <a href="login.html" class="login-button">Login</a>
     </header>
 
+    <!-- Barra de navegación secundaria -->
     <nav>
+        <!-- Menú desplegable para el Sistema Solar -->
         <div class="dropdown1">
             <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
             <div class="dropdown1-content">
+                <!-- Enlaces a páginas del Sistema Solar -->
                 <a href="sol.html">Sol</a>
                 <a href="dwarfplanets.html">Planetas enanos</a>
             </div>
         </div>
+        <!-- Menú desplegable para Planetas -->
         <div class="dropdown2">
             <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
             <div class="dropdown2-content">
+                <!-- Enlaces a páginas de planetas -->
                 <a href="mercurio.html">Mercurio</a>
                 <a href="venus.html">Venus</a>
                 <a href="tierra.html">Tierra</a>
@@ -43,35 +54,45 @@
                 <a href="neptuno.html">Neptuno</a>
             </div>
         </div>
+        <!-- Menú desplegable para Satélites -->
         <div class="dropdown3">
             <button onclick="toggleDropdown()">Satélites <span class="arrow">&#9660;</span></button>
             <div class="dropdown3-content">
+                <!-- Enlaces a páginas de satélites -->
                 <a href="naturales.html">Naturales</a>
                 <a href="artificiales.html">Artificiales</a>
             </div>
         </div>
+        <!-- Menú desplegable para el Universo -->
         <div class="dropdown4">
             <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
             <div class="dropdown4-content">
+                <!-- Enlace a la página de Humanos -->
                 <a href="humanos.html">Humanos</a>
             </div>
         </div>
     </nav>
 
+    <!-- Contenido principal -->
     <main>
         <section>
             <h3>SATURNO</h3>
             <div class="image-saturno-container">
+                <!-- Imagen de Saturno y descripción -->
                 <img src="images/imgplanetas/saturno.png" alt="saturno">
                 <p>Saturno es el sexto planeta del Sistema Solar, situado a una distancia media de unos 1,429 millones
                     de kilómetros del Sol. </p>
             </div>
             <div class="flex-container">
+                <!-- Sección de características principales -->
                 <div class="flex-item"><b>CARACTERÍSTICAS PRINCIPALES</b></div>
+                <!-- Sección de anillos -->
                 <div class="flex-item"><b>ANILLOS</b></div>
+                <!-- Sección de historia y exploración -->
                 <div class="flex-item"><b>HISTORIA Y EXPLORACIÓN</b></div>
             </div>
             <div class="flex-container1">
+                <!-- Detalles de las características principales de Saturno -->
                 <div class="flex-item1">- Saturno tiene un complejo sistema de anillos compuesto principalmente de
                     partículas de hielo y roca. Los anillos se extienden desde aproximadamente 6,630 kilómetros hasta
                     120,700 kilómetros desde el ecuador de Saturno.<br>
@@ -81,12 +102,14 @@
                     <br>- Se cree que los anillos podrían ser fragmentos de cometas, asteroides o lunas que fueron
                     desintegrados por la gravedad de Saturno.
                 </div>
+                <!-- Detalles sobre los anillos de Saturno -->
                 <div class="flex-item1">Marte tarda aproximadamente 687 días terrestres en completar una órbita
                     alrededor del Sol, lo que define su año marciano.<br>
                     <br>Un día en Marte (o sol) dura aproximadamente 24.6 horas, muy similar a un día en la Tierra.<br>
                     <br> Marte tiene estaciones como la Tierra debido a la inclinación de su eje, pero cada estación
                     dura aproximadamente el doble de tiempo debido a su órbita más larga.
                 </div>
+                <!-- Historia y exploración de Saturno -->
                 <div class="flex-item1">- Pioneer 11 (1979): La primera nave en volar cerca de Saturno, proporcionando
                     las primeras imágenes cercanas del planeta y sus anillos.<br>
                     <br>- Voyager 1 y 2 (1980-1981): Estas misiones proporcionaron imágenes detalladas y datos sobre
@@ -97,9 +120,11 @@
                 </div>
             </div>
         </section>
+        <!-- Sección de imágenes de planetas para explorar -->
         <section class="planet-images">
             <h3>¿Qué planeta quieres explorar?</h3>
             <div class="planet-images-container">
+                <!-- Enlaces a páginas de otros planetas con imágenes -->
                 <a href="mercurio.html"><img src="images/imgplanetas/mercurio.png" alt="Mercurio"></a>
                 <a href="venus.html"><img src="images/imgplanetas/venuss.jpg" alt="Venus"></a>
                 <a href="tierra.html"><img src="images/imgplanetas/tierra.jpg" alt="Tierra"></a>
@@ -111,6 +136,7 @@
             </div>
         </section>
     </main>
+    <!-- Enlace al archivo de JavaScript para funcionalidades -->
     <script src="scripts.js"></script>
 </body>
 </html>

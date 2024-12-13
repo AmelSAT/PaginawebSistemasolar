@@ -1,29 +1,39 @@
 <!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
+    <!-- Especifica la codificación de caracteres del documento como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la vista del documento para que sea responsiva en dispositivos móviles -->
     <link rel="stylesheet" href="styles/humanos.css">
+    <!-- Enlace a un archivo CSS externo para estilos -->
 </head>
-
 <body>
     <header>
+        <!-- Inicio del encabezado del documento -->
         <div class="dropdown">
+            <!-- Contenedor para un menú desplegable -->
             <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
+            <!-- Botón que activa el menú desplegable -->
             <div class="dropdown-content">
+                <!-- Contenido del menú desplegable -->
                 <a href="index.html">Inicio</a>
                 <a href="humanosespacio.html">Tienda</a>
             </div>
         </div>
         <form action="/search" method="get" id="search-form">
+            <!-- Formulario de búsqueda -->
             <input type="text" name="query" placeholder="Search..." id="search-bar">
         </form>
         <a href="login.html" class="login-button">Login</a>
+        <!-- Enlace a la página de login -->
     </header>
 
     <nav>
+        <!-- Inicio de la sección de navegación -->
         <div class="dropdown1">
+            <!-- Menú desplegable para "Sistema Solar" -->
             <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
             <div class="dropdown1-content">
                 <a href="sol.html">Sol</a>
@@ -31,6 +41,7 @@
             </div>
         </div>
         <div class="dropdown2">
+            <!-- Menú desplegable para "Planetas" -->
             <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
             <div class="dropdown2-content">
                 <a href="mercurio.html">Mercurio</a>
@@ -44,6 +55,7 @@
             </div>
         </div>
         <div class="dropdown3">
+            <!-- Menú desplegable para "Satélites Terrestres" -->
             <button onclick="toggleDropdown()">Satélites Terrestres <span class="arrow">&#9660;</span></button>
             <div class="dropdown3-content">
                 <a href="naturales.html">Naturales</a>
@@ -51,6 +63,7 @@
             </div>
         </div>
         <div class="dropdown4">
+            <!-- Menú desplegable para "Universo" -->
             <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
             <div class="dropdown4-content">
                 <a href="humanos.html">Humanos</a>
@@ -58,8 +71,10 @@
         </div>
     </nav>
     <main>
+        <!-- Inicio del contenido principal del documento -->
         <h1>Humanos en el Espacio</h1>
         <div class="astronaut-container">
+            <!-- Contenedor de imágenes de astronautas -->
             <a href="#astronaut1" class="astronaut1">
                 <img src="images/imagenastronautas/yurigagarin.png" alt="Astronauta 1">
                 <p><b>Yuri Gagarin</b></p>
@@ -70,7 +85,7 @@
             </a>
             <a href="#astronaut3" class="astronaut3">
                 <img src="images/imagenastronautas/neil.png" alt="Astronauta 3">
-                <p><b>Neil armstrong</b></p>
+                <p><b>Neil Armstrong</b></p>
             </a>
             <a href="#astronaut4" class="astronaut4">
                 <img src="images/imagenastronautas/valentina.png" alt="Astronauta 4">
@@ -79,23 +94,28 @@
         </div>
 
         <div id="astronaut1" class="info">
+            <!-- Información sobre Yuri Gagarin -->
             <h2>Yuri Gagarin</h2>
             <p>El primer ser humano en viajar al espacio en 1961 a bordo del Vostok 1.</p>
         </div>
         <div id="astronaut2" class="info">
+            <!-- Información sobre Buzz Aldrin -->
             <h2>Buzz Aldrin</h2>
             <p>Piloto del módulo lunar de la misión Apolo 11, caminó en la Luna junto a Armstrong.</p>
         </div>
         <div id="astronaut3" class="info">
-            <h2>Neil armstrong</h2>
+            <!-- Información sobre Neil Armstrong -->
+            <h2>Neil Armstrong</h2>
             <p>El primer ser humano en caminar sobre la Luna durante la misión Apolo 11 en 1969.</p>
         </div>
         <div id="astronaut4" class="info">
+            <!-- Información sobre Valentina Tereshkova -->
             <h2>Valentina Tereshkova</h2>
             <p>La primera mujer en el espacio, voló en 1963 a bordo del Vostok 6.</p>
         </div>
 
         <section class="training">
+            <!-- Sección sobre el entrenamiento de astronautas -->
             <h2>Entrenamiento de Astronautas</h2>
             <p>El entrenamiento de los astronautas es un proceso riguroso que incluye:</p>
             <ul>
@@ -105,8 +125,10 @@
                 <li>Entrenamiento en habilidades de trabajo en equipo y comunicación.</li>
             </ul>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/4514z--Zbfk" frameborder="0" allowfullscreen></iframe>
+            <!-- Video incrustado de YouTube sobre el entrenamiento de astronautas -->
         </section>
         <section class="misiones">
+            <!-- Sección sobre misiones comunes de astronautas -->
             <h2>Misiones Comunes</h2>
             <p>Los astronautas viajan al espacio por diversos motivos:</p>
             <ul>
@@ -114,9 +136,11 @@
                 <li>Mantenimiento de la EEI: Aseguran que la estación espacial funcione correctamente, realizando reparaciones y actualizaciones.</li>
                 <li>Exploración Espacial: Misiones que buscan expandir nuestro conocimiento sobre otros planetas y cuerpos celestes, como las misiones a Marte o a la Luna.</li>
             </ul>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7XzhtWcepos" frameborder="0" allowfullscreen></iframe> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7XzhtWcepos" frameborder="0" allowfullscreen></iframe>
+            <!-- Video incrustado de YouTube sobre misiones espaciales comunes -->
         </section>
-</main>
-<script src="javascript/scripts.js"></script>
+    </main>
+    <script src="javascript/scripts.js"></script>
+    <!-- Enlace a un archivo JavaScript externo -->
 </body>
 </html>
