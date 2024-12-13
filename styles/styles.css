@@ -74,7 +74,7 @@ header {
 
 .dropdown-content a:hover {
     background-color: #fba4a4;
-    transform: scale(1.1); 
+    transform: scale(1.1);
     transition: transform 0.2s;
 }
 
@@ -97,20 +97,28 @@ header {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
 /*LOGIN*/
 .login-button {
     display: inline-block;
     padding: 10px 15px;
-    margin-left: 50vw; /* Espacio entre el buscador y el botón */
-    background-color: transparent; /* Color de fondo */
-    color: white; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    border-radius: 5px; /* Bordes redondeados */
+    margin-left: 50vw;
+    /* Espacio entre el buscador y el botón */
+    background-color: transparent;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    border-radius: 5px;
+    /* Bordes redondeados */
 }
 
 .login-button:hover {
-    background-color: #6f7378; /* Color de fondo al pasar el mouse */
+    background-color: #6f7378;
+    /* Color de fondo al pasar el mouse */
 }
+
 /* Sección de navegación */
 nav {
     background-color: rgb(162, 225, 240);
@@ -120,6 +128,7 @@ nav {
     justify-content: space-between;
     padding: 0 2vw;
 }
+
 /* Dropdown */
 .dropdown1,
 .dropdown2,
@@ -209,7 +218,6 @@ nav {
     color: white;
     text-align: center;
     padding: 20px;
-    
 
 }
 
@@ -223,12 +231,15 @@ nav {
     -webkit-overflow-scrolling: touch;
     justify-content: space-between;
 }
+
 .content h4 {
     color: white;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    white-space: nowrap;
+    /* Evita que el texto se divida en varias líneas */
 }
+
 .image-container {
     display: flex;
     flex-wrap: nowrap;
@@ -236,8 +247,8 @@ nav {
     margin-top: 5vh;
     justify-content: flex-start;
     width: 100%;
-    padding: 20px; 
-    box-sizing: border-box; 
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .image-item {
@@ -247,18 +258,22 @@ nav {
     flex: 1;
     position: relative;
 }
+
 .image-item:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 .image-item img {
     width: 60%;
     height: auto;
-    border-radius: 10px; 
-    transition: transform 0.3s ease; /* Añadir transición para suavizar el efecto */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    /* Añadir transición para suavizar el efecto */
 }
+
 .image-item img:hover {
-    transform: scale(1.2); /* Aumentar el tamaño de la imagen al pasar el cursor */
+    transform: scale(1.2);
+    /* Aumentar el tamaño de la imagen al pasar el cursor */
 }
 
 
@@ -273,9 +288,10 @@ section h3 {
 }
 
 .image-sistemasolar-container {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
 }
+
 .image-sistemasolar-container p {
     margin: 0;
     padding-left: 10px;
@@ -285,7 +301,7 @@ section h3 {
 }
 
 .image-sistemasolar-container img {
-    width: 30%; 
+    width: 30%;
     height: auto;
     content: 0;
     margin-left: 5vw;
@@ -295,12 +311,14 @@ section h4 {
     font-size: 3em;
     margin-left: 30vw;
 }
-.image-comosecreo-container{
-    display: flex; 
-    align-items: center; 
+
+.image-comosecreo-container {
+    display: flex;
+    align-items: center;
     background-color: #becef0;
-    padding:15px;
+    padding: 15px;
 }
+
 .image-comosecreo-container p {
     margin: 0;
     padding-left: 10px;
@@ -311,18 +329,19 @@ section h4 {
 }
 
 .image-comosecreo-container img {
-    width: 30%; 
+    width: 30%;
     height: auto;
     content: 0;
     margin-right: 4vw;
 }
 
-.image-comosecreo1-container{
-    display: flex; 
-    align-items: center; 
+.image-comosecreo1-container {
+    display: flex;
+    align-items: center;
     background-color: #becef0;
-    padding:15px;
+    padding: 15px;
 }
+
 .image-comosecreo1-container p {
     margin: 0;
     padding-left: 10px;
@@ -333,17 +352,19 @@ section h4 {
 }
 
 .image-comosecreo1-container img {
-    width: 30%; 
+    width: 30%;
     height: auto;
     content: 0;
     margin-left: 4vw;
 }
-.image-comosecreo2-container{
-    display: flex; 
-    align-items: center; 
+
+.image-comosecreo2-container {
+    display: flex;
+    align-items: center;
     background-color: #becef0;
-    padding:40px;
+    padding: 40px;
 }
+
 .image-comosecreo2-container p {
     margin: 0;
     padding-left: 10px;
@@ -353,19 +374,20 @@ section h4 {
 }
 
 .image-comosecreo2-container img {
-    width: 33%; 
+    width: 33%;
     height: auto;
     content: 0;
     margin-right: 3vw;
     margin-left: 1vw;
 }
 
-.image-comosecreo3-container{
-    display: flex; 
-    align-items: center; 
+.image-comosecreo3-container {
+    display: flex;
+    align-items: center;
     background-color: #becef0;
-    padding:15px;
+    padding: 15px;
 }
+
 .image-comosecreo3-container p {
     margin: 0;
     padding-left: 10px;
@@ -376,17 +398,19 @@ section h4 {
 }
 
 .image-comosecreo3-container img {
-    width: 30%; 
+    width: 30%;
     height: auto;
     content: 0;
     margin-left: 4vw;
 }
-.image-comosecreo4-container{
-    display: flex; 
-    align-items: center; 
+
+.image-comosecreo4-container {
+    display: flex;
+    align-items: center;
     background-color: #becef0;
-    padding:15px;
+    padding: 15px;
 }
+
 .image-comosecreo4-container p {
     margin: 0;
     padding-left: 10px;
@@ -397,18 +421,19 @@ section h4 {
 }
 
 .image-comosecreo4-container img {
-    width: 25%; 
+    width: 25%;
     height: auto;
     content: 0;
     margin-right: 4vw;
 }
 
-.image-comosecreo5-container{
-    display: flex; 
-    align-items: center; 
+.image-comosecreo5-container {
+    display: flex;
+    align-items: center;
     background-color: #becef0;
-    padding:25px;
+    padding: 25px;
 }
+
 .image-comosecreo5-container p {
     margin: 0;
     padding-left: 10px;
@@ -419,8 +444,133 @@ section h4 {
 }
 
 .image-comosecreo5-container img {
-    width: 40%; 
+    width: 40%;
     height: auto;
     content: 0;
     margin-left: 4vw;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 20vh;
+        padding: 0 2vw;
+    }
+
+    .dropdown button,
+    .dropdown1 button,
+    .dropdown2 button,
+    .dropdown3 button,
+    .dropdown4 button {
+        font-size: 2vw;
+        /* Ajustar tamaño de texto */
+        padding: 0.8em;
+    }
+
+    #search-bar {
+        font-size: 3vw;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .image-item {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        position: relative;
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    .image-item img {
+        margin-bottom: 4vh;
+        width: 80%;
+        margin-left: 3vw;
+    }
+
+    section h3 {
+        font-size: 2.5em;
+    }
+
+    .image-sistemasolar-container img {
+        width: 50%;
+    }
+
+    .login-button {
+        margin-left: 0;
+        margin-top: 1em;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .overlay-text {
+        top: 6%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .dropdown button,
+    .dropdown1 button,
+    .dropdown2 button,
+    .dropdown3 button,
+    .dropdown4 button {
+        font-size: 2.5vw;
+        padding: 0.8em;
+    }
+
+    .dropdown-content,
+    .dropdown1-content,
+    .dropdown2-content,
+    .dropdown3-content,
+    .dropdown4-content {
+        width: 10%;
+        font-size: 3vw;
+    }
+
+    .dropdown1-content a,
+    .dropdown2-content a,
+    .dropdown3-content a,
+    .dropdown4-content a {
+        color: black;
+        padding: 8px 10px;
+        text-decoration: none;
+        display: block;
+        width: 8px;
+    }
+
+    .dropdown1-content a:hover,
+    .dropdown2-content a:hover,
+    .dropdown3-content a:hover,
+    .dropdown4-content a:hover {
+        background-color: #becef0;
+        transform: scale(1.1);
+        transition: transform 0.2s;
+    }
+
+    .dropdown1:hover .dropdown1-content,
+    .dropdown2:hover .dropdown2-content,
+    .dropdown3:hover .dropdown3-content,
+    .dropdown4:hover .dropdown4-content {
+        display: block;
+    }
+
+    #search-bar {
+        font-size: 4vw;
+    }
+
+    .login-button {
+        margin-left: 0;
+        margin-top: 1em;
+        width: 100;
+    }
 }
