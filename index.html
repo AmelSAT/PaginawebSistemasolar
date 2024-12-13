@@ -1,39 +1,29 @@
 <!DOCTYPE html>
-<!-- Declaración del tipo de documento HTML5 -->
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <!-- Especifica la codificación de caracteres del documento como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configura la vista del documento para que sea responsiva en dispositivos móviles -->
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- Enlace a un archivo CSS externo para estilos -->
 </head>
+
 <body>
     <header>
-        <!-- Inicio del encabezado del documento -->
         <div class="dropdown">
-            <!-- Contenedor para un menú desplegable -->
             <button onclick="toggleDropdown()">Explorar <span class="arrow">&#9660;</span></button>
-            <!-- Botón que activa el menú desplegable -->
             <div class="dropdown-content">
-                <!-- Contenido del menú desplegable -->
                 <a href="index.html">Inicio</a>
                 <a href="humanosespacio.html">Tienda</a>
             </div>
         </div>
         <form action="/search" method="get" id="search-form">
-            <!-- Formulario de búsqueda -->
             <input type="text" name="query" placeholder="Search..." id="search-bar">
         </form>
         <a href="login.html" class="login-button">Login</a>
-        <!-- Enlace a la página de login -->
     </header>
 
     <nav>
-        <!-- Inicio de la sección de navegación -->
         <div class="dropdown1">
-            <!-- Menú desplegable para "Sistema Solar" -->
             <button onclick="toggleDropdown()">Sistema Solar <span class="arrow">&#9660;</span></button>
             <div class="dropdown1-content">
                 <a href="sol.html">Sol</a>
@@ -41,7 +31,6 @@
             </div>
         </div>
         <div class="dropdown2">
-            <!-- Menú desplegable para "Planetas" -->
             <button onclick="toggleDropdown()">Planetas <span class="arrow">&#9660;</span></button>
             <div class="dropdown2-content">
                 <a href="mercurio.html">Mercurio</a>
@@ -55,7 +44,6 @@
             </div>
         </div>
         <div class="dropdown3">
-            <!-- Menú desplegable para "Satélites Terrestres" -->
             <button onclick="toggleDropdown()">Satélites Terrestres <span class="arrow">&#9660;</span></button>
             <div class="dropdown3-content">
                 <a href="naturales.html">Naturales</a>
@@ -63,7 +51,6 @@
             </div>
         </div>
         <div class="dropdown4">
-            <!-- Menú desplegable para "Universo" -->
             <button onclick="toggleDropdown()">Universo <span class="arrow">&#9660;</span></button>
             <div class="dropdown4-content">
                 <a href="humanos.html">Humanos</a>
@@ -72,20 +59,15 @@
     </nav>
 
     <main>
-        <!-- Inicio del contenido principal del documento -->
         <div class="video-container">
-            <!-- Contenedor de video -->
             <video autoplay muted loop id="background-video">
-                <!-- Video de fondo que se reproduce automáticamente, sin sonido y en bucle -->
                 <source src="video/123311-727474301_medium.mp4" type="video/mp4">
             </video>
             <div class="overlay-text">
-                <!-- Texto superpuesto al video -->
                 <h2>SISTEMA SOLAR</h2>
             </div>
         </div>
         <div class="content">
-            <!-- Contenedor de contenido con imágenes -->
             <h4>Nuestro Sistema Solar</h4>
             <div class="image-container">
                 <div class="image-item">
@@ -100,7 +82,6 @@
             </div>
         </div>
         <section>
-            <!-- Sección educativa sobre el sistema solar -->
             <h3>SISTEMA SOLAR</h3><br>
             <div class="image-sistemasolar-container">
                 <img src="images/imgindex/sistsolar.jpg" alt="El sistema solar">
@@ -110,7 +91,7 @@
             <h4>¿Cómo se formó?</h4><br>
             <div class="image-comosecreo-container">
                 <p>Antes de existiera el sistema solar, su lugar lo ocupaba una enorme nube de gas molecular.<br>
-                    Una perturbación causada por una supernova cercana, hizo que la nebulosa comenzara a colapsar bajo su propia gravedad.</p>
+                    Una preturbación causada por una supernova cercana, hizo que la nebulosa comenzara a colapsar bajo su propia gravedad.</p>
                 <img src="images/imgindex/nubedegasmolecular.jpg" alt="El sistema solar">
             </div>
             <div class="image-comosecreo1-container">
@@ -137,6 +118,5 @@
         </section>
     </main>
     <script src="javascript/scripts.js"></script>
-    <!-- Enlace a un archivo JavaScript externo -->
 </body>
 </html>
