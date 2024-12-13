@@ -272,3 +272,146 @@ h3{
     margin-right: 0; /* Elimina el margen derecho si es necesario */
     padding: 0; 
 }
+
+/* Media Query para pantallas pequeñas (móviles y tabletas) */
+@media (max-width: 768px) {
+    header {
+        height: 20vh;
+        padding: 0 2vw;
+    }
+
+    #search-bar {
+        font-size: 3vw;
+    }
+    .dropdown1 button,
+    .dropdown2 button,
+    .dropdown3 button,
+    .dropdown4 button {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .dropdown-content a,
+    .dropdown1-content a,
+    .dropdown2-content a,
+    .dropdown3-content a,
+    .dropdown4-content a {
+        font-size: 12px; 
+        padding: 8px 10px; 
+    }
+    .login-button {
+        margin-left: 0;
+        margin-top: 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-jupiter-container img {
+        width: 60%;
+        margin-left: 5vw;
+    }
+
+    .image-jupiter-container p {
+        font-size: 20px;
+        margin-left: 2vw;
+    }
+
+    .flex-container,
+    .flex-container1 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .flex-item,
+    .flex-item1 {
+        margin: 10px 0;
+        padding: 12px;
+    }
+
+    .planet-images-container img {
+        width: 100px;
+    }
+
+    .planet-images h3 {
+        font-size: 30px;
+    }
+}
+
+/* Media Query para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    header {
+        height: 20vh;
+        padding: 0 2vw;
+    }
+
+    .dropdown button,
+    .dropdown1 button,
+    .dropdown2 button,
+    .dropdown3 button,
+    .dropdown4 button {
+        font-size: 2vw;
+        padding: 0.8em;
+    }
+    .dropdown-content a,
+    .dropdown1-content a,
+    .dropdown2-content a,
+    .dropdown3-content a,
+    .dropdown4-content a {
+        font-size: 12px; 
+        padding: 8px 8px; 
+    }
+
+    #search-bar {
+        font-size: 3vw;
+    }
+
+    .dropdown-content,
+    .dropdown1-content,
+    .dropdown2-content,
+    .dropdown3-content,
+    .dropdown4-content {
+        min-width: 120px; /* Ajusta el ancho mínimo a un tamaño más pequeño */
+    }
+
+    .login-button {
+        margin-left: 0;
+        margin-top: 1em;
+        width: 100%;
+        text-align: center;
+    }
+    .video-container {
+        height: 100%; 
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .video-container video {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .overlay-text {
+        font-size: 20px;
+        top: 30%;
+        left: 15%;
+    }
+
+    section {
+        padding: 5px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    h3{
+        font-size: 30px;
+        text-align: center;
+        margin-left: 0; 
+        margin-right:5vw; 
+        padding: 0;
+    }
+    .image-mercurio-container p{
+        font-size: 15px;
+    }
+}

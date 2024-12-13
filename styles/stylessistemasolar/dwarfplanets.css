@@ -288,3 +288,110 @@ h3 {
     transform: scale(1.1); /* Aumenta el tamaño de la imagen */
     transition: transform 0.3s; /* Suaviza la transición */
 }
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        height: 20vh;
+        padding: 0 2vw;
+    }
+
+    .dropdown button,
+    .dropdown1 button,
+    .dropdown2 button,
+    .dropdown3 button,
+    .dropdown4 button {
+        font-size: 2vw;
+        padding: 0.8em;
+    }
+
+    #search-bar {
+        font-size: 3vw;
+    }
+    .dropdown1 button,
+    .dropdown2 button,
+    .dropdown3 button,
+    .dropdown4 button {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .dropdown-content a,
+    .dropdown1-content a,
+    .dropdown2-content a,
+    .dropdown3-content a,
+    .dropdown4-content a {
+        font-size: 12px; 
+        padding: 8px 10px; 
+    }
+    .login-button {
+        margin-left: 0;
+        margin-top: 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-pluton-container img {
+        width: 150px;
+    }
+    .image-eris-container img {
+        width: 180px;
+    }
+}
+
+/* Media Query para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    header {
+        height: 20vh;
+        padding: 0 2vw;
+    }
+
+    .dropdown button,
+    .dropdown1 button,
+    .dropdown2 button,
+    .dropdown3 button,
+    .dropdown4 button {
+        font-size: 2vw;
+        padding: 0.8em;
+    }
+    .dropdown-content a,
+    .dropdown1-content a,
+    .dropdown2-content a,
+    .dropdown3-content a,
+    .dropdown4-content a {
+        font-size: 12px; 
+        padding: 8px 8px; 
+    }
+
+    #search-bar {
+        font-size: 3vw;
+    }
+
+    .dropdown-content,
+    .dropdown1-content,
+    .dropdown2-content,
+    .dropdown3-content,
+    .dropdown4-content {
+        min-width: 120px; /* Ajusta el ancho mínimo a un tamaño más pequeño */
+    }
+
+    .login-button {
+        margin-left: 0;
+        margin-top: 1em;
+        width: 100%;
+        text-align: center;
+    }
+    h3 {
+        font-size: 3em;
+        text-decoration: underline;
+        margin-left: 25vw;
+    }
+    .image-eris-container img {
+        width: 170px;
+    }
+    .image-haumea-container img {
+        width: 170px;
+    }
+    .image-makemake-container img {
+        width: 150px;
+    }
+}
